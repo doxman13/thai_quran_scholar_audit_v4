@@ -284,23 +284,12 @@ def call_genai_with_fallbacks(pool: MultiKeyClientPool, prompt: str) -> Tuple[Li
 # Dynamic Character-Budget Batcher
 # ---------------------------------------------------------------------------
 def create_dynamic_batches(ayahs: List[Dict[str, Any]], char_budget: int = DEFAULT_CHAR_BUDGET) -> List[List[Dict[str, Any]]]:
-    batches = []
-    current_batch = []
-    current_chars = 0
-
-    for a in ayahs:
-        a_len = len(a.get("thai", ""))
-        if current_batch and (current_chars + a_len > char_budget):
-            batches.append(current_batch)
-            current_batch = [a]
-            current_chars = a_len
-        else:
-            current_batch.append(a)
-            current_chars += a_len
-
-    if current_batch:
-        batches.append(current_batch)
-    return batches
+    """Create batches that contain exactly **one** ayah each.
+    This overrides the previous dynamic‑budget logic and forces a
+    conservative payload of a single verse per API request.
+    """
+    # Return a list where each inner list holds a single ayah dictionary
+    return [[a] for a in ayahs]
 
 
 # ---------------------------------------------------------------------------
