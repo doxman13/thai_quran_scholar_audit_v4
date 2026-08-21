@@ -29,6 +29,7 @@ import time
 import re
 import csv
 import argparse
+import unicodedata
 from typing import List, Dict, Any, Optional, Tuple
 from google import genai
 from google.genai import types
@@ -140,17 +141,31 @@ Your ONLY task is to adjust and optimize THAI WHITESPACE SPACING for smooth read
    - If we strip all whitespace from your output, it MUST MATCH the original input EXACTLY character-for-character:
      `strip_whitespace(output) == strip_whitespace(input)`.
 
-2. ABSOLUTE PARENTHESES PRESERVATION:
-   - NEVER remove, add, or alter any text inside parentheses `(...)`.
-   - Preserve all bracketed tafsir notes exactly as written.
+2. ABSOLUTE PARENTHESES & PUNCTUATION PRESERVATION:
+   - NEVER remove, add, or alter any text inside parentheses `(...)` or brackets.
+   - Preserve all original Thai punctuation (เช่น ๆ, ?, !) and bracketed tafsir notes exactly.
 
-3. THAI SPACING RULES:
-   - Use spaces (' ') for natural pauses between clauses, after dialogue verbs (เช่น เขากล่าวว่า ...), and before conditional conjunctions (เช่น และหาก..., เพื่อที่...).
-   - Tighten compound words that were accidentally split by spaces (เช่น 'ทั้งนี้ เพื่อ' -> 'ทั้งนี้เพื่อ', 'พระองค์นั้น เป็น' -> 'พระองค์นั้นเป็น').
-   - DO NOT insert English punctuation like commas (',') or semicolons.
+3. STRICT THAI SPACING RULES (DOs & DON'Ts):
+
+   [ DO NOT INSERT SPACES IN THE FOLLOWING ]:
+   - NEVER put a space before or after 'แห่ง', 'ของ', 'เป็น', 'คือ', 'ว่า', 'เพื่อ' when connecting noun phrases or complements.
+     (CORRECT: 'ผู้ทรงอภิสิทธิ์แห่งวันตอบแทน' | WRONG: 'ผู้ทรงอภิสิทธิ์ แห่งวันตอบแทน')
+     (CORRECT: 'นั้นเป็นสิทธิ' | WRONG: 'นั้น เป็นสิทธิ')
+     (CORRECT: 'คนแรกของปวงชน' | WRONG: 'คนแรก ของปวงชน')
+   - NEVER split compound honorifics / divine attributes: 'ผู้ทรง...', 'พระผู้เป็นเจ้า'.
+   - NEVER split prepositional attachments: 'ให้แก่...', 'ต่อ...', 'สำหรับ...', 'ใน...'.
+
+   [ DO INSERT A SINGLE SPACE IN THE FOLLOWING ]:
+   - Between independent sentence clauses / major thought shifts.
+   - After dialogue introductory phrases (เช่น 'พวกเขากล่าวว่า [SPACE] ...', 'พระองค์ตรัสว่า [SPACE] ...').
+   - Before major contrastive conjunctions connecting full independent clauses (เช่น ' [SPACE] แต่ทว่า...', ' [SPACE] ทั้งๆ ที่...').
+
+   [ PARALLEL STRUCTURE CONSISTENCY ]:
+   - Repeated syntactic structures within the same verse MUST have matching spacing rhythm:
+     (CORRECT: 'เฉพาะพระองค์เท่านั้นที่... และเฉพาะพระองค์เท่านั้นที่...' OR 'เฉพาะพระองค์เท่านั้น ที่... และเฉพาะพระองค์เท่านั้น ที่...')
 
 4. OUTPUT FORMAT:
-   - Return a JSON array where each item contains `"ayah"` and the complete `"spaced_thai"` string.
+   - Return a strictly valid JSON array where each item contains "ayah" and the complete "spaced_thai" string.
 """
 
 def create_spacing_prompt(surah_num: int, batch: List[Dict[str, Any]]) -> str:
@@ -193,23 +208,28 @@ def normalize_mechanical_spacing(text: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Strict Mathematical Character-Lock Guardrail
+# Strict Mathematical Character-Lock Guardrail (with NFC Unicode Normalization)
 # ---------------------------------------------------------------------------
+def verify_char_lock(original: str, output: str) -> bool:
+    """Normalize Unicode (resolves composed vs decomposed Thai vowel/tone marks)
+    and verify 100.00% character identity.
+    """
+    orig_clean = re.sub(r'\s+', '', unicodedata.normalize('NFC', original).strip())
+    out_clean = re.sub(r'\s+', '', unicodedata.normalize('NFC', output).strip())
+    return orig_clean == out_clean
+
+
 def validate_and_apply_spacing(original_thai: str, llm_spaced_thai: str) -> Tuple[bool, str, str]:
     """
-    Asserts 100.00% character invariance.
+    Asserts 100.00% character invariance with NFC Unicode normalization.
     """
-    orig_chars = re.sub(r'\s+', '', original_thai)
-    llm_chars = re.sub(r'\s+', '', llm_spaced_thai)
-
-    if orig_chars != llm_chars:
+    if not verify_char_lock(original_thai, llm_spaced_thai):
         # Character mismatch! Instantly REJECT and preserve original text.
         return False, original_thai, "REJECTED_CHARACTER_MISMATCH"
 
     final_text = normalize_mechanical_spacing(llm_spaced_thai)
 
-    final_chars = re.sub(r'\s+', '', final_text)
-    if final_chars != orig_chars:
+    if not verify_char_lock(original_thai, final_text):
         return False, original_thai, "REJECTED_POST_PROCESS_MISMATCH"
 
     is_modified = (final_text != original_thai)
