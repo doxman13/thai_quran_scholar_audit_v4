@@ -15,16 +15,17 @@
 
 ---
 
-## 2. Pipeline 2: LLM Thai Spacing & Clause Cadence Engine (In Progress — 68.5%)
-- **Mode:** Ultra-conservative 1-verse-per-request (`[[a] for a in ayahs]`) with strict mathematical character-lock.
-- **Quota Run:** Utilized all available daily quotas across 6 API keys and models (`gemini-3.5-flash-lite`, `gemini-2.5-flash`, `gemini-3.1-flash-lite`).
-- **Checkpoint Results (as of quota exhaustion):**
-  - **Processed:** 4,270 / 6,236 Ayahs (**68.5%**)
-  - **Remaining:** 1,966 Ayahs (from Surah 42 through Surah 114)
-- **Status Breakdown:**
-  - `CLEAN` (spacing already optimal): 2,411 Ayahs
-  - `SPACING_OPTIMIZED` (improved spacing verified by character-lock): 1,597 Ayahs
-  - `REJECTED_CHARACTER_MISMATCH` (safely caught & preserved original text bit-for-bit): 262 Ayahs
+## 2. Pipeline 2: LLM Thai Spacing & Clause Cadence Engine (In Progress — 68.5% Base, 92.3% Refined)
+- **Mode:** Single-verse micro-batching (`[[a] for a in ayahs]`) with strict NFC Unicode normalized mathematical character-lock.
+- **Engine Pool:** 6 Gemini API keys with multi-model fallback (`gemini-3.5-flash-lite`, `gemini-2.5-flash`, `gemini-3.1-flash-lite`).
+- **Target Refinement (`--refine_targets`):**
+  - **Refined with Upgraded Prompt (`v2_nfc`):** 1,692 / 1,834 targeted ayahs (92.3% of targeted scope).
+  - Fixed over-segmentation around `แห่ง`, `ของ`, `เป็น`, `คือ`, `ว่า`, `เพื่อ`, and `ผู้ทรง...`.
+  - Resolved false-positive character mismatches with NFC Unicode normalization.
+- **Current Status Breakdown (across 4,270 audited ayahs in checkpoint):**
+  - `CLEAN` (spacing optimal & natural): **3,158 Ayahs**
+  - `SPACING_OPTIMIZED` (cadence & dialogue pauses): **1,007 Ayahs**
+  - `REJECTED_CHARACTER_MISMATCH` (safely preserved bit-for-bit): **105 Ayahs** (reduced from 262)
 - **Datasets Updated in Real-Time:**
   - `thai_v3_spacing_improved.json`
   - `thai_v3_spacing_improved.csv`
@@ -34,5 +35,5 @@
 ---
 
 ## Next Steps for Tomorrow (or after quota reset)
-1. Run `python pipeline2_llm_spacing_normalizer.py --surahs all`.
-2. The pipeline will automatically resume from verse 4,271 using the existing checkpoint to finish the remaining 1,966 Ayahs (Surahs 42–114).
+1. Run `python pipeline2_llm_spacing_normalizer.py --refine_targets both` to complete the remaining ~142 unrefined targets in Surahs 39–42.
+2. Run `python pipeline2_llm_spacing_normalizer.py --surahs all` to process the remaining 1,966 Ayahs (Surahs 42–114) to achieve 100% full Quran coverage.

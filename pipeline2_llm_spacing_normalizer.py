@@ -375,9 +375,11 @@ def export_spacing_datasets(checkpoint: Dict[str, Any], master_data: List[Dict[s
 # ---------------------------------------------------------------------------
 # Main Controller
 # ---------------------------------------------------------------------------
-def run_spacing_pipeline(surah_range: Optional[List[int]] = None, char_budget: int = DEFAULT_CHAR_BUDGET):
+def run_spacing_pipeline(surah_range: Optional[List[int]] = None, char_budget: int = DEFAULT_CHAR_BUDGET, refine_targets: Optional[str] = None):
     print("\n" + "="*70)
     print("PIPELINE 2: LLM THAI SPACING & CLAUSE PACING ENGINE")
+    if refine_targets:
+        print(f"Refinement Mode Active: targets = '{refine_targets}'")
     print("="*70)
 
     if not os.path.exists(MASTER_DATA_FILE):
@@ -398,18 +400,74 @@ def run_spacing_pipeline(surah_range: Optional[List[int]] = None, char_budget: i
 
     checkpoint = load_checkpoint()
     total_audited_initial = sum(1 for k, v in checkpoint.items() if v.get("is_processed"))
-    print(f"Surahs in scope: {len(surahs)} | Already processed in checkpoint: {total_audited_initial} ayahs")
+    total_rejected_initial = sum(1 for k, v in checkpoint.items() if "REJECTED" in v.get("status", ""))
+    total_optimized_initial = sum(1 for k, v in checkpoint.items() if v.get("status") == "SPACING_OPTIMIZED")
+    print(f"Surahs in scope: {len(surahs)} | Processed in checkpoint: {total_audited_initial} ayahs")
+    print(f"Current Stats -> OPTIMIZED: {total_optimized_initial} | REJECTED: {total_rejected_initial} | CLEAN: {total_audited_initial - total_optimized_initial - total_rejected_initial}")
 
-    total_ayahs_in_scope = sum(len(v) for v in surahs.values())
+    # Filter needed ayahs based on mode
+    targets_set = set(refine_targets.split(",")) if (refine_targets and ":" in refine_targets) else None
+
+    total_needed_count = 0
+    surah_needed_map = {}
 
     for s_num, ayahs in surahs.items():
-        needed_ayahs = [a for a in ayahs if not checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("is_processed")]
+        if refine_targets in ("both", "targets", "yes", "true"):
+            # Target both SPACING_OPTIMIZED and REJECTED ayahs that have not been re-evaluated with v2_nfc
+            needed = [
+                a for a in ayahs
+                if checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("prompt_version") != "v2_nfc"
+                and (
+                    checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("status") == "SPACING_OPTIMIZED"
+                    or "REJECTED" in checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("status", "")
+                )
+            ]
+        elif refine_targets in ("rejected", "mismatches"):
+            needed = [
+                a for a in ayahs
+                if checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("prompt_version") != "v2_nfc"
+                and "REJECTED" in checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("status", "")
+            ]
+        elif refine_targets == "optimized":
+            needed = [
+                a for a in ayahs
+                if checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("prompt_version") != "v2_nfc"
+                and checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("status") == "SPACING_OPTIMIZED"
+            ]
+        elif refine_targets == "all":
+            # Both refined targets and unprocessed ayahs
+            needed = [
+                a for a in ayahs
+                if (not checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("is_processed"))
+                or (
+                    checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("prompt_version") != "v2_nfc"
+                    and (
+                        checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("status") == "SPACING_OPTIMIZED"
+                        or "REJECTED" in checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("status", "")
+                    )
+                )
+            ]
+        elif targets_set:
+            needed = [a for a in ayahs if f"{s_num}:{a['ayah']}" in targets_set]
+        else:
+            needed = [a for a in ayahs if not checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("is_processed")]
+        
+        surah_needed_map[s_num] = needed
+        total_needed_count += len(needed)
+
+    print(f"\n[Run Target Scope] Total Ayahs to process/refine: {total_needed_count}")
+    if total_needed_count == 0:
+        print("No ayahs need processing or refinement. Exiting.")
+        return
+
+    processed_in_session = 0
+    for s_num, ayahs in surahs.items():
+        needed_ayahs = surah_needed_map[s_num]
         if not needed_ayahs:
-            print(f"Surah {s_num:3d} already fully spaced. Skipping.", flush=True)
             continue
 
         batches = create_dynamic_batches(needed_ayahs, char_budget=char_budget)
-        print(f"\n--> Spacing Surah {s_num:3d} ({len(needed_ayahs)} remaining ayahs in {len(batches)} micro-batches)...", flush=True)
+        print(f"\n--> Processing Surah {s_num:3d} ({len(needed_ayahs)} target ayahs in {len(batches)} micro-batches)...", flush=True)
 
         for b_idx, batch in enumerate(batches, 1):
             ayah_range_str = f"{batch[0]['ayah']}-{batch[-1]['ayah']}" if len(batch) > 1 else f"{batch[0]['ayah']}"
@@ -433,21 +491,24 @@ def run_spacing_pipeline(surah_range: Optional[List[int]] = None, char_budget: i
 
                 checkpoint[key] = {
                     "is_processed": True,
+                    "prompt_version": "v2_nfc",
                     "model": used_model,
                     "final_thai": final_text,
                     "status": status,
                     "char_lock_verified": is_valid,
                     "timestamp": time.time()
                 }
+                processed_in_session += 1
 
             save_checkpoint(checkpoint)
             total_now = sum(1 for k, v in checkpoint.items() if v.get("is_processed"))
-            print(f"    [{used_model} Key #{key_id}] Surah {s_num} Ayahs {ayah_range_str} ({len(batch)} ayahs) spaced. ({total_now}/{total_ayahs_in_scope} total)", flush=True)
+            remaining_rej = sum(1 for k, v in checkpoint.items() if "REJECTED" in v.get("status", ""))
+            print(f"    [{used_model} Key #{key_id}] Surah {s_num} Ayahs {ayah_range_str} -> {status} (Progress: {processed_in_session}/{total_needed_count} in run | Rej Total: {remaining_rej})", flush=True)
 
         export_spacing_datasets(checkpoint, master_data)
 
     print("\n" + "="*70)
-    print("Pipeline 2 Complete! 100% Mathematical Character Invariance Verified.")
+    print("Pipeline 2 Run Complete! 100% Mathematical Character Invariance Verified.")
     print(f"1. Improved JSON: {OUTPUT_JSON}")
     print(f"2. Improved CSV:  {OUTPUT_CSV}")
     print(f"3. Audit Report:  {OUTPUT_REPORT_CSV}")
@@ -459,6 +520,7 @@ if __name__ == "__main__":
     parser.add_argument("--surahs", type=str, default="all", help="Surah range e.g. 'all', '1-10', '114', or '1,2,3'")
     parser.add_argument("--char_budget", type=int, default=DEFAULT_CHAR_BUDGET, help="Max characters per dynamic prompt payload (default: 1200)")
     parser.add_argument("--reset_checkpoint", action="store_true", help="Reset checkpoint and re-process from scratch")
+    parser.add_argument("--refine_targets", type=str, default=None, nargs="?", const="both", help="Refine specific targets: 'both' (default: re-process SPACING_OPTIMIZED + REJECTED), 'rejected', 'optimized', 'all' (refine + remaining), or comma-separated keys like '2:3,2:13'")
 
     args = parser.parse_args()
 
@@ -479,4 +541,4 @@ if __name__ == "__main__":
             else:
                 surah_range.append(int(p))
 
-    run_spacing_pipeline(surah_range=surah_range, char_budget=args.char_budget)
+    run_spacing_pipeline(surah_range=surah_range, char_budget=args.char_budget, refine_targets=args.refine_targets)
