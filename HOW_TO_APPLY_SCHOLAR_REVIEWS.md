@@ -64,6 +64,10 @@ python scripts/apply_pipeline1_reviews.py
   - Updates `src/data/thai_v3.json`
   - Copies latest transparency audit log to `src/data/`
   - Automatically runs `export_db_for_web.py` to regenerate all 114 Word-by-Word JSONs.
+- ✅ **Updates Supabase Cloud Storage & Version Manifest:**
+  - Uploads latest `thai_v3.json` directly to Supabase Storage (`app-content/thai_v3.json`).
+  - Auto-increments `app_content_versions` table version so live web clients immediately fetch the newest translation.
+
 
 ---
 
