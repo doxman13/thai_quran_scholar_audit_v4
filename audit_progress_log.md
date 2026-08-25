@@ -39,9 +39,26 @@
 
 ---
 
-## 3. Summary of Deliverables
-Both pipelines are now **100% complete** for all 6,236 Ayahs:
-1. **Theological / Scholarship Audit Dataset:** `pipeline1_human_review.csv` & `pipeline1_audit_findings.csv`
-2. **Typography & Clause-Spaced Production Translation:** `thai_v3_spacing_improved.json` & `thai_v3_spacing_improved.csv` (0 mismatches, 1,330 optimized verses)
-3. **Typography Audit Report:** `thai_v3_spacing_audit_report.csv`
+## 3. Punctuation & Symbol Standardization (Completed 100%)
+- **Scope:** Cleaned all Western punctuation (`.`, `,`, `?`, `!`, `:`, `“`, `”`, `‘`, `’`, `"` and `-`) across all 6,236 Ayahs.
+- **Diacritic Preservation:** 100% preservation of Thai Phinthu (`ฺ` U+0E3A Arabic Sukūn mark) and Maiyamok (`ๆ` U+0E46).
+- **Tafsir Notes:** 100% preservation of `(...)` parenthetical glosses.
+- **Whitespace Normalization:** Automatically collapsed and balanced spacing around stripped punctuation.
+
+---
+
+## 4. Quran Foundation API Cross-Check & Website Transparency Log
+- **Benchmark Source:** Official Quran Foundation API (`api.quran.com`):
+  - Resource ID 51: King Fahad Quran Complex (raw prose).
+  - Resource ID 230: Society of Institutes & Universities (Thai 2 Base).
+- **Public Audit Log Generated:** `thai_translation_fixes_and_audit_log.csv` (2,945 categorized entries explaining every enhancement, typo fix, and spacing optimization for public website transparency).
+
+---
+
+## 5. Summary of Final Deliverables
+1. **Production Translation JSON (Clean Typography):** `thai_v3_spacing_improved.json` (6,236 Ayahs)
+2. **Production Translation CSV (Clean Typography):** `thai_v3_spacing_improved.csv` (6,236 Ayahs)
+3. **Public Fixes & Transparency Audit Log:** `thai_translation_fixes_and_audit_log.csv` (2,945 entries with Thai/English descriptions)
+4. **Typography & Spacing Audit Report:** `thai_v3_spacing_audit_report.csv`
+5. **Theological Audit Findings:** `pipeline1_human_review.csv` & `pipeline1_audit_findings.csv`
 
