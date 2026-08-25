@@ -403,12 +403,12 @@
   },
   "2:41": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
     "final_thai": "และพวกเจ้าจงศรัทธาต่อสิ่งที่ข้าได้ให้ลงมาเพื่อยืนยันสิ่งที่มีอยู่กับพวกเจ้า และพวกเจ้าจงอย่าเป็นผู้ปฏิเสธศรัทธาต่อสิ่งนั้นเป็นคนแรก และจงอย่าได้นำโองการของข้าไปแลกเปลี่ยนกับราคาอันเล็กน้อย และเฉพาะข้าเท่านั้น พวกเจ้าจงยำเกรง",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787322997.0036244
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630015.6668422
   },
   "2:42": {
     "is_processed": true,
@@ -1601,12 +1601,12 @@
   },
   "2:182": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
     "final_thai": "แล้วผู้ใดเกรงว่าผู้ทำพินัยกรรมมีความไม่เป็นธรรม (โดยไม่รู้) หรือกระทำความผิด (โดยเจตนา) แล้ว แล้ว เขาได้ประนีประนอมในระหว่างพวกเขา ก็ไม่มีโทษใด ๆ แก่เขา แท้จริงอัลลอฮฺเป็นผู้อภัยผู้ทรงเมตตาเสมอ",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787323224.8729608
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630016.7482014
   },
   "2:183": {
     "is_processed": true,
@@ -2280,12 +2280,12 @@
   },
   "2:260": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "และจงรำลึกถึงขณะที่ที่อิบรอฮีม กล่าวว่า โอ้พระผู้เป็นเจ้าของข้าพระองค์ โปรดได้ทรงให้ข้าพระองค์เห็นด้วยเถิดว่า พระองค์จะทรงให้บรรดาผู้ที่ตายมีชีวิตขึ้นอย่างไร? พระองค์ตรัสว่า เจ้ามิได้เชื่อ ดอกหรือ? อิบรอฮีมกล่าวว่า หามิได้ แต่ทว่าเพื่อหัวใจของข้าพระองค์จะได้สงบ พระองค์ตรัสว่า เจ้าจงเอานกมาสี่ตัว แล้วจงเลี้ยงมันให้คุ้นแก่เจ้า และตัดมันออกเป็นท่อน ๆ ภายหลังเจ้าจงวางไว้บนภูเขาทุกลูก ซึ่งส่วนหนึ่งจากนกเหล่านั้น แล้วจงเรียกมัน มันจะมายังเจ้าโดยรีบเร่ง และพึงรู้ไว้เถิดว่า แท้จริงอัลลอฮฺนั้น เป็นผู้ทรงเดชานุภาพ ผู้ทรงปรีชาญาณ",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787323461.394572
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
+    "final_thai": "และจงรำลึกถึงขณะที่ที่อิบรอฮีมกล่าวว่า โอ้พระผู้เป็นเจ้าของข้าพระองค์ โปรดได้ทรงให้ข้าพระองค์เห็นด้วยเถิดว่า พระองค์จะทรงให้บรรดาผู้ที่ตายมีชีวิตขึ้นอย่างไร? พระองค์ตรัสว่า เจ้ามิได้เชื่อ ดอกหรือ? อิบรอฮีมกล่าวว่า หามิได้ แต่ทว่าเพื่อหัวใจของข้าพระองค์จะได้สงบ พระองค์ตรัสว่า เจ้าจงเอานกมาสี่ตัว แล้วจงเลี้ยงมันให้คุ้นแก่เจ้า และตัดมันออกเป็นท่อน ๆ ภายหลังเจ้าจงวางไว้บนภูเขาทุกลูก ซึ่งส่วนหนึ่งจากนกเหล่านั้น แล้วจงเรียกมัน มันจะมายังเจ้าโดยรีบเร่ง และพึงรู้ไว้เถิดว่า แท้จริงอัลลอฮฺนั้นเป็นผู้ทรงเดชานุภาพ ผู้ทรงปรีชาญาณ",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630018.6701548
   },
   "2:261": {
     "is_processed": true,
@@ -2923,12 +2923,12 @@
   },
   "3:50": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "และฉันจะเป็นผู้มายืนยันสิ่งที่อยู่เบื้องหน้าของฉัน อันได้แก่ อัตเตารอต และเพื่อที่ฉันจะได้อนุมัติแก่พวกท่านซึ่งบางสิ่งที่ถูกห้ามแก่พวกท่าน และฉันได้นำสัญญาณหนึ่งจากพระเจ้าของท่านมายังพวกท่านแล้ว ดังนั้นพึงยำเกรงอันลอฮฺเถิด และจงเชื่อฟังฉัน",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787323544.6540115
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
+    "final_thai": "และฉันจะเป็นผู้มายืนยันสิ่งที่อยู่เบื้องหน้าของฉัน อันได้แก่ อัตเตารอต และเพื่อที่ฉันจะได้อนุมัติแก่พวกท่าน ซึ่งบางสิ่งที่ถูกห้ามแก่พวกท่าน และฉันได้นำสัญญาณหนึ่งจากพระเจ้าของท่านมายังพวกท่านแล้ว ดังนั้นพึงยำเกรงอันลอฮฺเถิด และจงเชื่อฟังฉัน",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630035.4558208
   },
   "3:51": {
     "is_processed": true,
@@ -3363,12 +3363,12 @@
   },
   "3:103": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "และพวกเจ้าจงยึดสายเชือกของอัลลอฮฺ โดยพร้อมกันทั้งหมด และจงอย่าแตกแยกกัน และจำรำลึกถึงความเมตตาของอัลลอฮฺที่มีแด่พวกเจ้า ขณะที่พวกเจ้าเป็นศัตรูกัน แล้วพระองค์ได้ทรงให้สนิทสนมกันระหว่างหัวใจของพวกเจ้า แล้วพวกเจ้าก็กลายเป็นพี่น้องกันด้วย ความเมตตาของพระองค์ และพวกเจ้าเคยปรากฏอยู่บนปากหลุมแห่งไฟนรก แล้วพระองค์ก็ทรงช่วยพวกเจ้าให้พ้นจากปากหลุมแห่งนรกนั้น ในทำนองนั้นแหละ อัลลอฮฺจะทรงแจกแจงแก่พวกเจ้าซึ่งบรรดาโองการของพระองค์ เพื่อว่าพวกเจ้าจะได้รับแนวทางอันถูกต้อง",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787323583.9300008
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
+    "final_thai": "และพวกเจ้าจงยึดสายเชือกของอัลลอฮฺโดยพร้อมกันทั้งหมด และจงอย่าแตกแยกกัน และจำรำลึกถึงความเมตตาของอัลลอฮฺที่มีแด่พวกเจ้า ขณะที่พวกเจ้าเป็นศัตรูกัน แล้วพระองค์ได้ทรงให้สนิทสนมกันระหว่างหัวใจของพวกเจ้า แล้วพวกเจ้าก็กลายเป็นพี่น้องกันด้วยความเมตตาของพระองค์ และพวกเจ้าเคยปรากฏอยู่บนปากหลุมแห่งไฟนรก แล้วพระองค์ก็ทรงช่วยพวกเจ้าให้พ้นจากปากหลุมแห่งนรกนั้น ในทำนองนั้นแหละอัลลอฮฺจะทรงแจกแจงแก่พวกเจ้าซึ่งบรรดาโองการของพระองค์ เพื่อว่าพวกเจ้าจะได้รับแนวทางอันถูกต้อง",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630039.672054
   },
   "3:104": {
     "is_processed": true,
@@ -3437,12 +3437,12 @@
   },
   "3:112": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "ความต่ำช้าได้ถูกฟาดลงบนพวกเขา ณ ที่ใดก็ตามที่พวกเขาถูกพบ นอกจากด้วยสายเชือกจากอัลลอฮฺ และสายเชือกจากมนุษย์ และพวกเขาจะนำความกริ้วโกรธจากอัลลอฮฺกลับไป และความขัดสนก็จะถูกฟาดลงบนพวกเขา นั่นก็เพราะว่าพวกเขาเคยปฏิเสธบรรดาโองการของอัลลอฮฺ และฆ่าบรรดานะบี โดยปราศจากความเป็นธรรม นั่นก็เนื่องจากการที่พวกเขาดื้อดึง และเคยทำการละเมิด",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787323590.6711206
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
+    "final_thai": "ความต่ำช้าได้ถูกฟาดลงบนพวกเขา ณ ที่ใดก็ตามที่พวกเขาถูกพบ นอกจากด้วยสายเชือกจากอัลลอฮฺ และสายเชือกจากมนุษย์ และพวกเขาจะนำความกริ้วโกรธจากอัลลอฮฺกลับไป และความขัดสนก็จะถูกฟาดลงบนพวกเขา นั่นก็เพราะว่าพวกเขาเคยปฏิเสธบรรดาโองการของอัลลอฮฺ และฆ่าบรรดานะบีโดยปราศจากความเป็นธรรม นั่นก็เนื่องจากการที่พวกเขาดื้อดึงและเคยทำการละเมิด",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630041.7047489
   },
   "3:113": {
     "is_processed": true,
@@ -4238,12 +4238,12 @@
   },
   "4:7": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
     "final_thai": "สำหรับบรรดาชายนั้น มีส่วนได้รับจากสิ่งที่ผู้บังเกิดเกล้าทั้งสอง และบรรดาญาติที่ใกล้ชิดได้ทิ้งไว้ และสำหรับบรรดาหญิงนั้น ก็มีส่วนได้รับจากสิ่งที่ผู้บังเกิดเกล้าทั้งสอง และบรรดาญาติที่ใกล้ชิดได้ทิ้งไว้ ซึ่งสิ่งนั้นจะน้อยหรือมากก็ตาม เป็นส่วนได้รับ ที่ถูกำหนดอัตราส่วนไว้",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787323695.6645582
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630043.5125015
   },
   "4:8": {
     "is_processed": true,
@@ -4770,12 +4770,12 @@
   },
   "4:69": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
     "final_thai": "และผู้ใดที่เชื่อฟังอัลลอฮฺ และรอซูลแล้ว ชนเหล่านี้จะอยู่ร่วมกับบรรดาผู้ที่อัลลอฮฺทรงกรุณาเมตตาแก่พวกเขา อันได้แก่บรรดานะบี บรรดาผู้ที่เชื่อโดยดุษฎี, บรรดาผู้ที่เสียชีวิตในสงคราม และบรรดาผู้ที่ประพฤติดี และชนเหล่านี้แหละเป็นเพื่อนที่ดี",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787323817.9243484
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630044.567523
   },
   "4:70": {
     "is_processed": true,
@@ -4989,12 +4989,12 @@
   },
   "4:95": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "บรรดาผู้ที่นั่งอยู่จากหมู่มุมินที่มิใช่ผู้มีความเดือดร้อน และบรรดาผู้ต่อสู้และเสียสละในทางของอัลลอฮฺ ทั้งด้วยทรัพย์สมบัติของพวกเขา และชีวิตของพวกเขานั้น หาได้เท่าเทียมกันไม่ อัลลอฮฺทรงให้บรรดาผู้ที่ต่อสู้และเสียสละด้วยทรัพย์สมบัติของพวกเขา และชีวิตของพวกเขา เหนือกว่าบรรดาผู้ที่นั่งอยู่ขั้นหนึ่ง และทั้งหมดนั้นอัลลอฮฺได้ทรงสัญญาไว้ให้ซึ่งสิ่งที่ดีเยี่ยม แต่อัลลอฮฺทรงให้บรรดาผู้ที่ต่อสู้และเสียสละเหนือกว่าบรรดาผู้ที่นั่งอยู่ด้วยรางวัลอันใหญ่หลวง",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787323846.6969304
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
+    "final_thai": "บรรดาผู้ที่นั่งอยู่จากหมู่มุมินที่มิใช่ผู้มีความเดือดร้อน และบรรดาผู้ต่อสู้และเสียสละในทางของอัลลอฮฺ ทั้งด้วยทรัพย์สมบัติของพวกเขาและชีวิตของพวกเขานั้น หาได้เท่าเทียมกันไม่ อัลลอฮฺทรงให้บรรดาผู้ที่ต่อสู้และเสียสละด้วยทรัพย์สมบัติของพวกเขาและชีวิตของพวกเขา เหนือกว่าบรรดาผู้ที่นั่งอยู่ขั้นหนึ่ง และทั้งหมดนั้นอัลลอฮฺได้ทรงสัญญาไว้ให้ซึ่งสิ่งที่ดีเยี่ยม แต่อัลลอฮฺทรงให้บรรดาผู้ที่ต่อสู้และเสียสละเหนือกว่าบรรดาผู้ที่นั่งอยู่ด้วยรางวัลอันใหญ่หลวง",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630046.0699518
   },
   "4:96": {
     "is_processed": true,
@@ -5689,12 +5689,12 @@
   },
   "5:2": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
     "final_thai": "ผู้ศรัทธาทั้งหลาย! จงอย่าให้เป็นที่อนุมัติ ซึ่งบรรดาเครื่องหมายแห่งศาสนาของอัลลอฮฺ และเดือนที่ต้องห้าม และสัตว์พลี และสัตว์ที่ถูกสามเครื่องหมายไว้ที่คอเพื่อเป็นสัตว์พลี และบรรดาผู้ที่มุ่งสู่บ้านอันเป็นที่ต้องห้าม โดยแสวงหาความโปรดปราน และความพอพระทัยจากพระเจ้าของพวกเขา แต่เมื่อพวกเจ้าเปลื้องอิหฺรอมแล้ว ก็จงล่าสัตว์ได้ และจงอย่าให้การเกลียดชังแก่พวกหนึ่งพวกใด ที่ขัดขวางพวกเจ้ามิให้เข้ามัสยิดฮะรอม ทำให้พวกเจ้ากระทำการละเมิด และพวกเจ้าจงช่วยเหลือกันในสิ่งที่เป็นคุณธรรม และความยำเกรง และจงอย่าช่วยกันในสิ่งที่เป็นบาป และเป็นศัตรูกันและพึงกลัวเกรงอัลลอฮฺเถิด แท้จริงอัลลอฮฺนั้นเป็นผู้ทรงรุนแรงในการลงโทษ",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787323931.6836104
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630048.1819978
   },
   "5:3": {
     "is_processed": true,
@@ -6976,12 +6976,12 @@
   },
   "6:34": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
     "final_thai": "และแน่นอนบรรดารอซูลรอซูลก่อนเจ้านั้นได้ถูกปฏิเสธมาแล้ว แล้วพวกเขาอดทนต่อสิ่งที่พวกเขาถูกปฏิเสธ และถูกทำร้ายจนกระทั่งความช่วยเหลือของเราได้มายังพวกเขา และไม่มีใครเปลี่ยนแปลงพจนารถของอัลลอฮฺได้ และแท้จริงนั้นได้มายังเจ้าแล้ว จากข่าวคราวของบรรดาผู้ที่ถูกส่งมา",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787324146.028901
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630049.7653642
   },
   "6:35": {
     "is_processed": true,
@@ -7194,12 +7194,12 @@
   },
   "6:60": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "และพระองค์คือผู้ที่ทรงให้พวกเจ้าตาย ในเวลากลางคืน และทรงรู้สิ่งที่พวกเจ้าได้กระทำขึ้นในเวลากลางวัน แล้วก็ทรงให้พวกเจ้าฟื้นคืนชีพในเวลานั้น เพื่อว่าเวลาแห่งอายุที่ถูกกำหนดไว้นั้นจะได้ถูกใช้ให้หมดไป แล้วยังพระองค์นั้นคือการกลับไปของพวกเจ้า แล้วพระองค์จะทรงบอกแก่พวกเจ้าในสิ่งที่พวกเจ้ากระทำกัน",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787324181.0331361
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
+    "final_thai": "และพระองค์คือผู้ที่ทรงให้พวกเจ้าตายในเวลากลางคืน และทรงรู้สิ่งที่พวกเจ้าได้กระทำขึ้นในเวลากลางวัน แล้วก็ทรงให้พวกเจ้าฟื้นคืนชีพในเวลานั้น เพื่อว่าเวลาแห่งอายุที่ถูกกำหนดไว้นั้นจะได้ถูกใช้ให้หมดไป แล้วยังพระองค์นั้นคือการกลับไปของพวกเจ้า แล้วพระองค์จะทรงบอกแก่พวกเจ้าในสิ่งที่พวกเจ้ากระทำกัน",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630051.0768695
   },
   "6:61": {
     "is_processed": true,
@@ -7443,12 +7443,12 @@
   },
   "6:90": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "ชนเหล่านี้ คือผู้ที่อัลลอฮฺได้ทรงแนะนำไว้ ดังนั้นด้วยคำแนะนำของพวกเขา เจ้าจงเจริญรอยตามเถิด จงกล่าวเถิด (มุฮัมมัด) ว่า ฉันจะไม่ขอต่อพวกท่าน ซึ่งค่าจ้างใด ๆ ในการใช้ให้ศรัทธาต่ออัลกุรอาน อัลกุรอานนั้น มิใช่อะไรอื่นนอกจากคำตักเตือนสำหรับประชาชาติทั้งหลายเท่านั้น.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787324205.4047604
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
+    "final_thai": "ชนเหล่านี้คือผู้ที่อัลลอฮฺได้ทรงแนะนำไว้ ดังนั้นด้วยคำแนะนำของพวกเขาเจ้าจงเจริญรอยตามเถิด จงกล่าวเถิด (มุฮัมมัด) ว่าฉันจะไม่ขอต่อพวกท่านซึ่งค่าจ้างใด ๆ ในการใช้ให้ศรัทธาต่ออัลกุรอาน อัลกุรอานนั้นมิใช่อะไรอื่นนอกจากคำตักเตือนสำหรับประชาชาติทั้งหลายเท่านั้น.",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630052.7037585
   },
   "6:91": {
     "is_processed": true,
@@ -7478,12 +7478,12 @@
   },
   "6:94": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "และแน่นอนพวกเจ้าได้มายังเราโดยลำพังเยี่ยงที่เราได้บังเกิดพวกเจ้ามาในครั้งแรก และพวกเจ้าได้ละทิ้งสิ่งที่เราได้ให้แก่พวกเจ้าไว้เบื้องหลังของพวกเจ้า และเราไม่เห็นอยู่กับพวกเจ้าบรรดาผู้ที่จะช่วยเหลือพวกเจ้าที่พวกเจ้าได้อ้างไว้.ว่า พวกเขาเป็นผู้มีหุ้นส่วนในพวกเจ้า แน่นอนได้ขาดเป็นเสี่ยง ๆ แล้วในระหว่างพวกเจ้า และได้หายจากพวกเจ้าสิ่งที่พวกเจ้าได้อ้างไว้",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787324217.9701796
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-2.5-flash",
+    "final_thai": "และแน่นอน พวกเจ้าได้มายังเราโดยลำพัง เยี่ยงที่เราได้บังเกิดพวกเจ้ามาในครั้งแรก และ พวกเจ้าได้ละทิ้งสิ่งที่เราได้ให้แก่พวกเจ้าไว้เบื้องหลังของพวกเจ้า และ เราไม่เห็นอยู่กับพวกเจ้า บรรดาผู้ที่จะช่วยเหลือพวกเจ้าที่พวกเจ้าได้อ้างไว้.ว่า พวกเขาเป็นผู้มีหุ้นส่วนในพวกเจ้า แน่นอน ได้ขาดเป็นเสี่ยง ๆ แล้วในระหว่างพวกเจ้า และ ได้หายจากพวกเจ้า สิ่งที่พวกเจ้าได้อ้างไว้",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630124.197315
   },
   "6:95": {
     "is_processed": true,
@@ -7587,12 +7587,12 @@
   },
   "6:107": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "และหากว่าอัลลอฮฺทรงประสงค์แล้ว พวกเขาก็ย่อมมิให้มีภาคีขึ้น และเราก็มิได้ให้เจ้าเป็นผู้พิทักษ์รักษาพวกเขา และเจ้าก็มิใช่เป็นผู้รับมอบหมาย ให้คุ้มครองรักษาพวกเขาด้วย.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787324232.1502774
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
+    "final_thai": "และหากว่าอัลลอฮฺทรงประสงค์แล้ว พวกเขาก็ย่อมมิให้มีภาคีขึ้น และเราก็มิได้ให้เจ้าเป็นผู้พิทักษ์รักษาพวกเขา และเจ้าก็มิใช่เป็นผู้รับมอบหมายให้คุ้มครองรักษาพวกเขาด้วย.",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630150.2086062
   },
   "6:108": {
     "is_processed": true,
@@ -7613,12 +7613,12 @@
   },
   "6:110": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
     "final_thai": "และเราจะพลิกหัวใจของพวกเขา และตาของพวกเขา เช่นเดียวกับที่พวกเขามิได้ศรัทธาต่อสิ่งนั้น ในครั้งแรก และเราจะปล่อยพวกเขาให้ระเหเร่ร่อนอยู่ในความละเมิดของพวกเขาต่อไป.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787324235.2449355
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630151.5712464
   },
   "6:111": {
     "is_processed": true,
@@ -9070,12 +9070,12 @@
   },
   "7:119": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "แล้วที่โน่นแหละ พวกเขา ก็ได้รับความพ่ายแพ้ และกลายเป็นผู้ต่ำต้อย",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787324423.7210767
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
+    "final_thai": "แล้วที่โน่นแหละ พวกเขาก็ได้รับความพ่ายแพ้ และกลายเป็นผู้ต่ำต้อย",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630152.7798924
   },
   "7:120": {
     "is_processed": true,
@@ -9306,12 +9306,12 @@
   },
   "7:147": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
     "final_thai": "และบรรดาผู้ที่ปฏิเสธบรรดาโองการของเรา และการพบกับปรโลกนั้น บรรดาการงานของพวกเขาย่อมไร้ผล พวกเขาจะไม่ถูกตอบแทนนอกจากสิ่งที่พวกเขากระทำเท่านั้น.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787324484.3453553
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630173.9413805
   },
   "7:148": {
     "is_processed": true,
@@ -10653,12 +10653,12 @@
   },
   "9:24": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
-    "final_thai": "จงกล่าวเถิด (มุฮัมมัด) ว่า หากบรรดาบิดาของพวกเจ้าและบรรดาลูก ๆ ของพวกเจ้าและบรรดาพี่น้องของพวกเจ้า และบรรดาคู่ครองของพวกเจ้า และบรรดาญาติของพวกเจ้า และบรรดาทรัพย์สมบัติที่พวกเจ้าแสวงหาไว้ และสินค้าที่พวกเจ้ากลัวว่าจะจำหน่ายมันไม่ออก และบรรดาที่อยู่อาศัยที่พวกเจ้าพึงพอใจมันนั้น เป็นที่รักใคร่แก่พวกเจ้ายิ่งกว่าอัลลอฮฺ และรอซูลของพระองค์ และการต่อสู้ในทางของพระองค์แล้วไซร้ ก็จงรอคอยกันเถิดจนกว่าอัลลอฮฺ จะทรงนำมาซึ่งกำลังของพระองค์ และอัลลอฮฺนั้นจะไม่ทรงนำทางแก่กลุ่มชนที่ละเมิด",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383201.6683323
+    "final_thai": "จงกล่าวเถิด (มุฮัมมัด) ว่า หากบรรดาบิดาของพวกเจ้าและบรรดาลูก ๆ ของพวกเจ้าและบรรดาพี่น้องของพวกเจ้า และบรรดาคู่ครองของพวกเจ้า และบรรดาญาติของพวกเจ้า และบรรดาทรัพย์สมบัติที่พวกเจ้าแสวงหาไว้ และสินค้าที่พวกเจ้ากลัวว่าจะจำหน่ายมันไม่ออก และบรรดาที่อยู่อาศัยที่พวกเจ้าพึงพอใจมันนั้นเป็นที่รักใคร่แก่พวกเจ้ายิ่งกว่าอัลลอฮฺ และรอซูลของพระองค์ และการต่อสู้ในทางของพระองค์แล้วไซร้ ก็จงรอคอยกันเถิดจนกว่าอัลลอฮฺ จะทรงนำมาซึ่งกำลังของพระองค์ และอัลลอฮฺนั้นจะไม่ทรงนำทางแก่กลุ่มชนที่ละเมิด",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630175.7788715
   },
   "9:25": {
     "is_processed": true,
@@ -12897,12 +12897,12 @@
   },
   "11:52": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
     "final_thai": "และโอ้กลุ่มชนของฉันเอ๋ย จงขออภัยโทษต่อพระเจ้าของพวกท่าน แล้วจงกลับเนื้อกลับตัวต่อพระองค์ พระองค์จะส่งเมฆ (น้ำฝน) มาเหนือพวกท่าน ให้หลั่งน้ำฝนลงมาอย่างหนักและจะทรงเพิ่มพลังเป็นทวีคุณให้แก่พวกท่าน และพวกท่าน และพวกท่านอย่าผินหลังโดยเป็นผู้กระทำผิด",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787325371.1698751
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630177.5382826
   },
   "11:53": {
     "is_processed": true,
@@ -13646,12 +13646,12 @@
   },
   "12:18": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "และพวกเขาได้นำเสื้อของเขามา มีเลือดปลอมติดอยู่ แต่ว่าพวกเจ้าได้แต่งเรื่องขึ้นเพื่อพวกเจ้า ดังนั้น การอดทนเป็นสิ่งที่ดี และอัลลอฮฺทรงเป็นผู้ให้ความช่วยเหลือในสิ่งที่พวกเจ้ากล่าวอ้าง",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787325518.7077298
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
+    "final_thai": "และพวกเขาได้นำเสื้อของเขามามีเลือดปลอมติดอยู่ แต่ว่าพวกเจ้าได้แต่งเรื่องขึ้นเพื่อพวกเจ้า ดังนั้น การอดทนเป็นสิ่งที่ดี และอัลลอฮฺทรงเป็นผู้ให้ความช่วยเหลือในสิ่งที่พวกเจ้ากล่าวอ้าง",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630178.7461052
   },
   "12:19": {
     "is_processed": true,
@@ -14425,12 +14425,12 @@
   },
   "13:1": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
     "final_thai": "อะลิฟ ลาม มีม รอ เหล่านี้คือบรรดาโองการแห่งคัมภีร์ และสิ่งที่ได้ถูกประทานลงมาแก่เจ้าจากพระเจ้าของเจ้านั้นเป็นสัจธรรม และแต่ส่วนมากของมนุษย์ไม่ศรัทธา",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787325668.4032905
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630212.5327592
   },
   "13:2": {
     "is_processed": true,
@@ -15760,12 +15760,12 @@
   },
   "15:65": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
     "final_thai": "ดังนั้น ท่านจงเดินทางไปกับครอบครัวของท่าน ในช่วงเวลากลางคืน และจงตามหลังพวกเขา, และอย่าให้ผู้ใดในหมู่พวกท่านเหลียวหลัง และจงเดินต่อไปตามที่พวกท่านถูกบัญชา",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787325842.4134057
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630227.552814
   },
   "15:66": {
     "is_processed": true,
@@ -16091,12 +16091,12 @@
   },
   "16:5": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
     "final_thai": "และปศุสัตว์ พระองค์ทรงสร้างมัน ในตัวมันมีความอบอุ่นสำหรับพวกเจ้า, และประโยชน์มากหลาย และในส่วนหนึ่งจากมันนั้น พวกเจ้าเอามาบริโภคได้",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787325926.9631703
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630228.7528195
   },
   "16:6": {
     "is_processed": true,
@@ -16474,12 +16474,12 @@
   },
   "16:50": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-2.5-flash",
     "final_thai": "พวกเขาจะกลัวพระเจ้าของพวกเขา ผู้ทรงอำนาจเหนือพวกเขา ปฏิบัติตามสิ่งที่พวกเขาถูกบัญชา.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787326002.1906624
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630247.202313
   },
   "16:51": {
     "is_processed": true,
@@ -17491,12 +17491,12 @@
   },
   "17:41": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "และโดยแน่นอน เราได้ชี้แจงในอัลกุรอานนี้ เพื่อพวกเขาจะได้รำลึกแต่มันมิได้เพิ่มสิ่งใดแก่พวกเขา นอกจากการเตลิดหนี",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787326252.4041011
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-2.5-flash",
+    "final_thai": "และโดยแน่นอน เราได้ชี้แจงในอัลกุรอานนี้เพื่อพวกเขาจะได้รำลึก แต่มันมิได้เพิ่มสิ่งใดแก่พวกเขา นอกจากการเตลิดหนี",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630258.8788838
   },
   "17:42": {
     "is_processed": true,
@@ -17842,12 +17842,12 @@
   },
   "17:81": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
     "final_thai": "และจงกล่าวเถิด เมื่อความจริงปรากฏขึ้นและความเท็จย่อมมลายไป แท้จริงความเท็จนั้นย่อมมลายไปเสมอ",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787326353.5158777
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630259.926286
   },
   "17:82": {
     "is_processed": true,
@@ -17925,12 +17925,12 @@
   },
   "17:91": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "หรือให้ท่านมีสวนอินทผลัม และองุ่น ให้มันแยกเป็นลำน้ำหลายสาย พวยพุ่งออกมาท่านกลางมัน",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787326360.6730134
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-2.5-flash",
+    "final_thai": "หรือให้ท่านมีสวนอินทผลัมและองุ่น ให้มันแยกเป็นลำน้ำหลายสาย พวยพุ่งออกมาท่านกลางมัน",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630366.5844297
   },
   "17:92": {
     "is_processed": true,
@@ -19362,12 +19362,12 @@
   },
   "19:39": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-2.5-flash",
     "final_thai": "และเจ้าจงเตือนสำทับพวกเขาถึงวันแห่งความเสียใจเมื่อกิจการนั้นถูกตัดสิน และพวกเขาอยู่ในหลงลืม และพวกเขาไม่ศรัทธา.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787326625.217541
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630382.3044884
   },
   "19:40": {
     "is_processed": true,
@@ -20369,12 +20369,12 @@
   },
   "20:61": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "มูซาได้กล่าวแก่พวกเขา, ความหายนะจงประสบแก่พวกท่าน พวกท่านอย่าได้เสกสรรปั้นแต่งการมุสาต่ออัลลอฮฺ มิฉะนั้น พระองค์จะทรงทำลายพวกท่านด้วยการลงโทษ และแน่นอนผู้ปั้นแต่งการมุสานั้น ได้ประสบความผิดหวังมาแล้ว",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787326753.9097624
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
+    "final_thai": "มูซาได้กล่าวแก่พวกเขา, ความหายนะจงประสบแก่พวกท่าน พวกท่านอย่าได้เสกสรรปั้นแต่งการมุสาต่ออัลลอฮฺ มิฉะนั้นพระองค์จะทรงทำลายพวกท่านด้วยการลงโทษ และแน่นอนผู้ปั้นแต่งการมุสานั้นได้ประสบความผิดหวังมาแล้ว",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630383.5374498
   },
   "20:62": {
     "is_processed": true,
@@ -21375,12 +21375,12 @@
   },
   "21:45": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
     "final_thai": "จงกล่าวเถิด (มุฮัมมัด) แท้จริงฉันเพียงตักเตือน.พวกท่านด้วยวะฮียฺเท่านั้น แต่คนหูหนวกไม่ได้ยินเสียงเรียกร้อง เมื่อพวกเขาถูกตักเตือน",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787326903.1628726
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630433.123227
   },
   "21:46": {
     "is_processed": true,
@@ -21727,12 +21727,12 @@
   },
   "21:87": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
     "final_thai": "และจงรำลึกถึงเรื่องราวของซันนูน (นบียูนุส) เมื่อเขาจากไปด้วยความโกรธพรรคพวกของเขา แล้วเขาคิดว่าเราจะไม่ทำให้เขาได้รับความลำบาก แล้วเขาก็ร้องเรียนท่านกลางความมืดทึบทะมึนว่า ไม่มีพระเจ้าอื่นใดนอกจากกพระองค์ท่าน มหาบริสุทธิ์แห่งพระองค์ท่าน แท้จริงข้าพระองค์เป็นผู้หนึ่งในหมู่ผู้อธรรมทั้งหลาย",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787326954.2894115
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630434.8451567
   },
   "21:88": {
     "is_processed": true,
@@ -23117,12 +23117,12 @@
   },
   "23:60": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
     "final_thai": "และบรรดาผู้ที่บริจาคสิ่งที่พวกเขาได้มา โดยที่จิตใจของเขาเปี่ยมได้ด้วยความหวั่นเกรงว่า แท้จริงพวกเขาต้องกลับไปหาพระเจ้าของพวกเขา",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787327212.427079
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630436.2614326
   },
   "23:61": {
     "is_processed": true,
@@ -24145,12 +24145,12 @@
   },
   "24:64": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "พึงรู้เถิดว่า แท้จริงสิ่งที่อยู่ในชั้นฟ้าทั้งหลายและแผ่นดินนั้น เป็นกรรมสิทธิ์ของอัลลอฮฺ. แน่นอน อัลลอฮฺทรงรอบรู้สิ่งที่พวกเจ้ามีสภาพเป็นอยู่ และวันที่พวกเขาจะถูกนำกลับไปสู่พระองค์ ดังนั้น พระองค์จะทรงแจ้งแก่พวกเขาในสิ่งที่พวกเขาได้กระทำไว้. และอัลลอฮฺเป็นผู้ทรงรอบรู้ทุกสิ่ง",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787327386.7147243
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
+    "final_thai": "พึงรู้เถิดว่าแท้จริงสิ่งที่อยู่ในชั้นฟ้าทั้งหลายและแผ่นดินนั้นเป็นกรรมสิทธิ์ของอัลลอฮฺ. แน่นอน อัลลอฮฺทรงรอบรู้สิ่งที่พวกเจ้ามีสภาพเป็นอยู่ และวันที่พวกเขาจะถูกนำกลับไปสู่พระองค์ ดังนั้น พระองค์จะทรงแจ้งแก่พวกเขาในสิ่งที่พวกเขาได้กระทำไว้. และอัลลอฮฺเป็นผู้ทรงรอบรู้ทุกสิ่ง",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630451.4556234
   },
   "25:1": {
     "is_processed": true,
@@ -24163,30 +24163,30 @@
   },
   "25:2": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "สำหรับพระองค์ เป็นผู้ครอบครองบรรดาชั้นฟ้าและแผ่นดิน และพระองค์จะไม่ตั้งผู้ใดเป็นพระบุตร. และสำหรับพระองค์นั้น ไม่มีหุ้นส่วนร่วมกับพระองค์ในการครองอำนาจ และพระองค์ทรงให้บังเกิดทุกสิ่ง แล้วทรงกำหนดมันให้เป็นไปตามกฎสภาวะ",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787327389.7137518
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
+    "final_thai": "สำหรับพระองค์เป็นผู้ครอบครองบรรดาชั้นฟ้าและแผ่นดิน และพระองค์จะไม่ตั้งผู้ใดเป็นพระบุตร. และสำหรับพระองค์นั้นไม่มีหุ้นส่วนร่วมกับพระองค์ในการครองอำนาจ และพระองค์ทรงให้บังเกิดทุกสิ่ง แล้วทรงกำหนดมันให้เป็นไปตามกฎสภาวะ",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630463.3868496
   },
   "25:3": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "พวกเขาได้เคารพบูชาพระเจ้าอื่น ๆ จากพระองค์ โดยที่พระเจ้าเหล่านั้นมิได้สร้างสิ่งใดทั้ง ๆ ที่พวกเขาถูกสร้างขึ้นมา. และพวกเขาไม่มีอำนาจที่จะให้โทษและให้คุณแก่ตัวเองได้. และพวกเขาไม่มีอำนาจควบคุมความตายและความเป็นและการฟื้นคืนชีพ",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787327419.28659
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
+    "final_thai": "พวกเขาได้เคารพบูชาพระเจ้าอื่น ๆ จากพระองค์ โดยที่พระเจ้าเหล่านั้นมิได้สร้างสิ่งใด ทั้ง ๆ ที่พวกเขาถูกสร้างขึ้นมา. และพวกเขาไม่มีอำนาจที่จะให้โทษและให้คุณแก่ตัวเองได้. และพวกเขาไม่มีอำนาจควบคุมความตายและความเป็นและการฟื้นคืนชีพ",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630474.4823635
   },
   "25:4": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
     "final_thai": "และบรรดาผู้ปฏิเสธศรัทธากล่าวว่า แท้จริงอัลกุรอานนี้มิใช่อันใด นอกจากการโกหกที่มุฮัมมัดได้กุขึ้นเอง. และหมู่ชนอื่น ๆ ได้ช่วยเขาในเรื่องนี้. ดังนั้น แน่นอนพวกเขาได้นำมาซึ่งความอยุติธรรมและการโกหก",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787327420.329609
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630522.3822005
   },
   "25:5": {
     "is_processed": true,
@@ -24216,12 +24216,12 @@
   },
   "25:8": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "หรือมีคลังสมบัติถูกโยนลงมาให้เขา หรือให้เขามีสวนแห่งหนึ่ง เพื่อเขาจะได้กินสิ่งที่มีอยู่ในนั้นจากมัน. และบรรดาผู้อธรรมกล่าวขึ้นว่า พวกท่านมิได้ปฏิบัติตามผู้ใด นอกจากชายผู้ถูกอาคมเท่านั้น",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787327430.3827875
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
+    "final_thai": "หรือมีคลังสมบัติถูกโยนลงมาให้เขา หรือให้เขามีสวนแห่งหนึ่งเพื่อเขาจะได้กินสิ่งที่มีอยู่ในนั้นจากมัน. และบรรดาผู้อธรรมกล่าวขึ้นว่า พวกท่านมิได้ปฏิบัติตามผู้ใด นอกจากชายผู้ถูกอาคมเท่านั้น",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630551.1394675
   },
   "25:9": {
     "is_processed": true,
@@ -24258,12 +24258,12 @@
   },
   "25:13": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "และเมื่อพวกเขาถูกโยนลงไปในสถานที่แคบ ในสภาพที่ถูกมัดมือติดกับลำคอ. ณ ที่นั้นพวกเขาจะวิงวอนขอความพินาศให้แก่ตัวเขา",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787327454.7751005
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
+    "final_thai": "และเมื่อพวกเขาถูกโยนลงไปในสถานที่แคบ ในสภาพที่ถูกมัดมือติดกับลำคอ. ณ ที่นั้น พวกเขาจะวิงวอนขอความพินาศให้แก่ตัวเขา",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630559.548277
   },
   "25:14": {
     "is_processed": true,
@@ -24301,21 +24301,21 @@
   },
   "25:18": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
     "final_thai": "พวกเขากล่าวว่า มหาบริสุทธิ์พระองค์ท่าน ไม่เป็นการบังควรแก่พวกเรา ที่พวกเราจะยึดถือผู้คุ้มครองอื่น ๆ นอกจากพระองค์. แต่ทว่าพระองค์ได้ทรงประทานปัจจัยให้แก่พวกเขา และบรรพบุรุษของพวกเขา จนกระทั่งพวกเขาได้ลืมต่อการรำลึก และพวกเขาได้เป็นหมู่ชนที่วิบัติ",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787327490.6370087
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630573.3593168
   },
   "25:19": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "แน่นอน พวกเขาได้ปฏิเสธพวกเจ้าในสิ่งที่พวกเจ้ากล่าว. ดังนั้น พวกเจ้าจึงไม่สามารถเลี่ยงมิให้มีการลงโทษ และไม่สามารถจะให้ความช่วยเหลือได้. และผู้ใดในหมู่พวกเจ้ากระทำผิดเราจะให้เขาลิ้มรสการลงโทษอันมหันต์",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787327492.6204877
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
+    "final_thai": "แน่นอน พวกเขาได้ปฏิเสธพวกเจ้าในสิ่งที่พวกเจ้ากล่าว. ดังนั้น พวกเจ้าจึงไม่สามารถเลี่ยงมิให้มีการลงโทษ และไม่สามารถจะให้ความช่วยเหลือได้. และผู้ใดในหมู่พวกเจ้ากระทำผิด เราจะให้เขาลิ้มรสการลงโทษอันมหันต์",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630581.573261
   },
   "25:20": {
     "is_processed": true,
@@ -24394,12 +24394,12 @@
   },
   "25:29": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
     "final_thai": "แน่นอน เขาได้ทำให้ฉันหลงผิดจากการตักเตือน หลังจากที่มันได้มีมายังฉัน. และชัยฏอนมารร้ายนั้น มันเป็นผู้เหยียดหยามมนุษย์เสมอ",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787327499.8723333
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630591.5596952
   },
   "25:30": {
     "is_processed": true,
@@ -24421,12 +24421,12 @@
   },
   "25:32": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "และบรรดาผู้ปฏิเสธศรัทธา กล่าวว่า ทำไมอัลกุรอานจึงไม่ถูกประทานลงมาแก่เขาครั้งเดียวกันทั้งหมด? เช่นนั้นแหละ เพื่อเราจะทำให้หัวใจของเจ้ามั่นคงหนักแน่น. และเราได้จัดให้มันเป็นระเบียบเรียบร้อย",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787327508.1000006
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
+    "final_thai": "และบรรดาผู้ปฏิเสธศรัทธากล่าวว่า ทำไมอัลกุรอานจึงไม่ถูกประทานลงมาแก่เขาครั้งเดียวกันทั้งหมด? เช่นนั้นแหละ เพื่อเราจะทำให้หัวใจของเจ้ามั่นคงหนักแน่น. และเราได้จัดให้มันเป็นระเบียบเรียบร้อย",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630604.706225
   },
   "25:33": {
     "is_processed": true,
@@ -24454,12 +24454,12 @@
   },
   "25:36": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
     "final_thai": "แล้วเราได้กล่าวว่า เจ้าทั้งสองจงออกไปยังหมู่ชนที่ปฏิเสธ ไม่เชื่อโองการทั้งหลายของเรา. และเราได้ทำลายพวกเขาอย่างพินาศย่อยยับ",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787327512.4818678
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630613.7869244
   },
   "25:37": {
     "is_processed": true,
@@ -24479,12 +24479,12 @@
   },
   "25:39": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "และชนชาติแต่ละสมัยเราได้นำหลักฐานมาชี้แจงแก่เขา. และชนชาติแต่ละสมัยนั้นเราก็ได้ทำลายอย่างสิ้นซาก",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787327513.5363853
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
+    "final_thai": "และชนชาติแต่ละสมัย เราได้นำหลักฐานมาชี้แจงแก่เขา. และชนชาติแต่ละสมัยนั้น เราก็ได้ทำลายอย่างสิ้นซาก",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630620.4549718
   },
   "25:40": {
     "is_processed": true,
@@ -24505,12 +24505,12 @@
   },
   "25:42": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "เขาเกือบจะทำให้พวกเราหลงทางไปจาก (การสักการะบูชา) บรรดาพระเจ้าของเรา หากว่าเราไม่อดทนยึดมั่นต่อพระเจ้าเหล่านั้น. และพวกเขาจะรู้เมื่อพวกเขาได้พบเห็นการลงโทษว่าผู้ใดจะหลงทางกันแน่",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787327516.589963
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
+    "final_thai": "เขาเกือบจะทำให้พวกเราหลงทางไปจาก (การสักการะบูชา) บรรดาพระเจ้าของเรา หากว่าเราไม่อดทนยึดมั่นต่อพระเจ้าเหล่านั้น. และพวกเขาจะรู้ เมื่อพวกเขาได้พบเห็นการลงโทษว่าผู้ใดจะหลงทางกันแน่",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630630.7294807
   },
   "25:43": {
     "is_processed": true,
@@ -26565,12 +26565,12 @@
   },
   "26:216": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "หากพวกเขาฝ่าฝืนเจ้าก็จงกล่าวเถิดแท้จริงฉันขอปลีกตัวให้พ้นจากสิ่งที่พวกท่านปฏิบัติกันอยู่",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787327764.7455032
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
+    "final_thai": "หากพวกเขาฝ่าฝืนเจ้า ก็จงกล่าวเถิด แท้จริงฉันขอปลีกตัวให้พ้นจากสิ่งที่พวกท่านปฏิบัติกันอยู่",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630631.8546624
   },
   "26:217": {
     "is_processed": true,
@@ -26822,12 +26822,12 @@
   },
   "27:20": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
     "final_thai": "และเขาได้ตรวจดูฝูงนกแล้วกล่าวขึ้นว่า ทำไมฉันจึงไม่เห็นฮุดฮุด แต่ว่ามันหายไปไหน",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787327788.095873
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630632.8871017
   },
   "27:21": {
     "is_processed": true,
@@ -27812,12 +27812,12 @@
   },
   "28:46": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "และเจ้า (มุฮัมมัด) มิได้ปรากฏอยู่ทางด้านข้างของภูเขาฎูร เมื่อเราได้ร้องเรียก แต่มันเป็นความเมตตาจากพระเจ้าของเจ้า เพื่อเจ้าจักได้ตักเตือนกลุ่มชนหนึ่ง ที่มิได้มีผู้ตักเตือนคนใดมายังพวกเขาก่อนหน้าเจ้า เพื่อว่าพวกเขาจะได้ใคร่ครวญ",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787327870.0567791
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
+    "final_thai": "และเจ้า (มุฮัมมัด) มิได้ปรากฏอยู่ทางด้านข้างของภูเขาฎูร เมื่อเราได้ร้องเรียก แต่มันเป็นความเมตตาจากพระเจ้าของเจ้าเพื่อเจ้าจักได้ตักเตือนกลุ่มชนหนึ่งที่มิได้มีผู้ตักเตือนคนใดมายังพวกเขาก่อนหน้าเจ้าเพื่อว่าพวกเขาจะได้ใคร่ครวญ",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630634.058954
   },
   "28:47": {
     "is_processed": true,
@@ -28588,12 +28588,12 @@
   },
   "29:61": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "และถ้าเจ้าถามพวกเขา ใครเป็นผู้สร้างชั้นฟ้าทั้งหลาย และแผ่นดิน และเป็นผู้ทำให้ดวงอาทิตย์และดวงจันทร์เป็นประโยชน์ แน่นอนพวกเขาจะกล่าวว่า อัลลอฮฺ แล้วทำไมเล่าพวกเขาจึงหันเหออกไปทางอื่น",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787328021.0982673
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
+    "final_thai": "และถ้าเจ้าถามพวกเขา ใครเป็นผู้สร้างชั้นฟ้าทั้งหลายและแผ่นดิน และเป็นผู้ทำให้ดวงอาทิตย์และดวงจันทร์เป็นประโยชน์ แน่นอนพวกเขาจะกล่าวว่าอัลลอฮฺ แล้วทำไมเล่าพวกเขาจึงหันเหออกไปทางอื่น",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630635.2451258
   },
   "29:62": {
     "is_processed": true,
@@ -29255,39 +29255,39 @@
   },
   "31:16": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "“โอ้ลูกเอ๋ย แท้จริง (หากว่าความผิดนั้น) มันจะหนักเท่าเมล็ดผักสักเมล็ดหนึ่ง มันจะซ่อนอยู่ในหิน หรืออยู่ในชั้นฟ้าทั้งหลายหรืออยู่ในแผ่นดิน อัลลอฮฺก็จะทรงนำมันออกมา แท้จริง อัลลอฮฺเป็นผู้ทรงเมตตา ผู้ทรงรอบรู้ยิ่ง”",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787328086.7647207
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
+    "final_thai": "“โอ้ลูกเอ๋ย แท้จริง (หากว่าความผิดนั้น) มันจะหนักเท่าเมล็ดผักสักเมล็ดหนึ่ง มันจะซ่อนอยู่ในหิน หรืออยู่ในชั้นฟ้าทั้งหลายหรืออยู่ในแผ่นดิน อัลลอฮฺก็จะทรงนำมันออกมา แท้จริงอัลลอฮฺเป็นผู้ทรงเมตตา ผู้ทรงรอบรู้ยิ่ง”",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630636.576717
   },
   "31:17": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "“โอ้ลูกเอ๋ย เจ้าจงดำรงไว้ซึ่งการละหมาด และจงใช้กันให้กระทำความดี และจงห้ามปรามกันให้ละเว้นการทำความชั่ว และจงอดทนต่อสิ่งที่ประสบกับเจ้า แท้จริง นั่นคือส่วนหนึ่งจากกิจการที่หนักแน่น มั่นคง”",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787328090.3002064
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
+    "final_thai": "“โอ้ลูกเอ๋ย เจ้าจงดำรงไว้ซึ่งการละหมาด และจงใช้กันให้กระทำความดี และจงห้ามปรามกันให้ละเว้นการทำความชั่ว และจงอดทนต่อสิ่งที่ประสบกับเจ้า แท้จริงนั่นคือส่วนหนึ่งจากกิจการที่หนักแน่นมั่นคง”",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630637.6779568
   },
   "31:18": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "“และเจ้าอย่าหันแก้ม (ใบหน้า) ของเจ้าให้แก่ผู้คนอย่างยะโส และอย่าเดินไปตามแผ่นดินอย่างไร้มรรยาท แท้จริง อัลลอฮฺ มิทรงชอบทุกผู้หยิ่งจองหอง และผู้คุยโวโอ้อวด”",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787328092.6756594
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
+    "final_thai": "“และเจ้าอย่าหันแก้ม (ใบหน้า) ของเจ้าให้แก่ผู้คนอย่างยะโส และอย่าเดินไปตามแผ่นดินอย่างไร้มรรยาท แท้จริงอัลลอฮฺมิทรงชอบทุกผู้หยิ่งจองหอง และผู้คุยโวโอ้อวด”",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630638.7271144
   },
   "31:19": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "“และเจ้าจงก้าวเท้าของเจ้าพอประมาณ และจงลดเสียงของเจ้าลง แท้จริง เสียงที่น่าเกลียดยิ่งคือเสียง (ร้อง) ของลา”",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787328120.16542
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
+    "final_thai": "“และเจ้าจงก้าวเท้าของเจ้าพอประมาณ และจงลดเสียงของเจ้าลง แท้จริงเสียงที่น่าเกลียดยิ่งคือเสียง (ร้อง) ของลา”",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630639.6412265
   },
   "31:20": {
     "is_processed": true,
@@ -29386,12 +29386,12 @@
   },
   "31:33": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
     "final_thai": "โอ้มนุษย์เอ๋ย พวกเจ้าจงยำเกรงพระเจ้าของพวกเจ้าเถิด และจงกลัววันหนึ่งที่พ่อไม่อาจจะช่วยลูกของเขาได้ และลูกก็ไม่อาจจะช่วยพ่อของเขาได้แต่อย่างใด แท้จริงสัญญาของอัลลอฮฺนั้นเป็นความจริง ดังนั้นอย่าให้การมีชีวิตอยู่ในโลกนี้ล่อลวงพวกเจ้า และอย่าให้หัวหน้าพวกล่อลวง (ชัยตอน) มาหลอกลวงพวกเจ้าเกี่ยวกับอัลลอฮฺเป็นอันขาด.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787328158.3790596
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630641.3423517
   },
   "31:34": {
     "is_processed": true,
@@ -30200,12 +30200,12 @@
   },
   "33:67": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.1-flash-lite",
     "final_thai": "และพวกเขากล่าวว่า ข้าแต่พระเจ้าของเรา แท้จริงเราได้เชื่อฟังปฏิบัติตามบรรดาหัวหน้าของเรา และบรรดาผู้นำของเรา ดังนั้นพวกเขาได้ทำให้พวกเราหลงทาง”",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787328272.5618644
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630643.8911614
   },
   "33:68": {
     "is_processed": true,
@@ -30704,12 +30704,12 @@
   },
   "34:54": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.1-flash-lite",
     "final_thai": "และระหว่างพวกเขากับสิ่งที่พวกเขาต้องการมีสิ่งกีดขวาง ดั่งเช่นที่ได้ถูกปฏิบัติมาก่อนแล้วกับพลพรรคของพวกเขา แท้จริงพวกเขานั้นอยู่ในความสงสัย ความสนเท่ห์.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787328387.8820398
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630646.246033
   },
   "35:1": {
     "is_processed": true,
@@ -30896,12 +30896,12 @@
   },
   "35:22": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
-    "final_thai": "และคนเป็นกับคนตายนั้น ย่อมไม่เหมือนกัน แท้จริง อัลลอฮฺทรงให้ผู้ที่พระองค์ทรงประสงค์ได้ยิน และเจ้าไม่สามารถที่จะให้ผู้ที่อยู่ในหลุมฝังศพได้ยินได้.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787328442.5949259
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
+    "final_thai": "และคนเป็นกับคนตายนั้น ย่อมไม่เหมือนกัน แท้จริงอัลลอฮฺทรงให้ผู้ที่พระองค์ทรงประสงค์ได้ยิน และเจ้าไม่สามารถที่จะให้ผู้ที่อยู่ในหลุมฝังศพได้ยินได้.",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630647.9041896
   },
   "35:23": {
     "is_processed": true,
@@ -30948,12 +30948,12 @@
   },
   "35:28": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.1-flash-lite",
     "final_thai": "และในหมู่มนุษย์ และสัตว์ และปศุสัตว์ ก็มีหลากหลายสีเช่นเดียวกัน แท้จริง, บรรดาผู้ที่มีความรู้จากปวงบ่าวของพระองค์เท่านั้นที่เกรงกลัวอัลลอฮฺ แท้จริงอัลลอฮฺนั้นเป็นผู้ทรงอำนาจ ผู้ทรงอภัยเสมอ.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787328486.2677195
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630650.0737197
   },
   "35:29": {
     "is_processed": true,
@@ -31001,12 +31001,12 @@
   },
   "35:35": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.1-flash-lite",
     "final_thai": "ซึ่งพระองค์ทรงให้เราได้พำนักในสถานที่พำนักอันสถาพร ด้วยความโปรดปรานของพระองค์ ความเหน็ดเหนื่อยจะไม่ประสบแก่เราในนั้น และความเบื่อหน่ายก็จะไม่ประสบแก่เราในนั้น.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787328498.8672814
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630664.1759365
   },
   "35:36": {
     "is_processed": true,
@@ -31045,12 +31045,12 @@
   },
   "35:40": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash-lite",
     "final_thai": "จงกล่าวเถิดมุฮัมมัด พวกท่านไม่เห็นดอกหรือ? ? บรรดาภาคี (เจว็ด) ของพวกท่านที่พวกท่านวิงวอนขออื่นจากอัลลอฮฺ จงแสดงให้ฉันเห็นซิว่าพวกมันได้สร้างอะไรในแผ่นดินนี้? หรือว่าพวกมันมีส่วนร่วมในชั้นฟ้าทั้งหลาย? หรือว่าเราได้ให้คัมภีร์แก่พวกมัน พวกมันจึงยึดมั่นอยู่บนหลักฐานของมัน เปล่าดอก! บรรดาผู้อธรรมนั้นต่างก็มิได้มีสัญญาอะไรต่อกัน นอกจากการหลอกลวงเท่านั้น.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787328506.5426478
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630665.602445
   },
   "35:41": {
     "is_processed": true,
@@ -33533,30 +33533,30 @@
   },
   "38:33": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "จงนำมันกลับมาให้ฉัน แล้วเขาก็เริ่มลูบขาและคอของมัน.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383237.6758552
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630667.6042383
   },
   "38:34": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "และโดยแน่นอนเราได้ทดสอบสุลัยมาน และเราได้วางร่างหนึ่งไว้บนเก้าอี้ของเขา แล้วเขาก็ทบทวนความผิดด้วยความเสียใจ.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383238.704709
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630669.8063583
   },
   "38:35": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "เขากล่าวว่า ข้าแต่พระเจ้าของข้าพระองค์ ขอพระองค์ทรงอภัยให้แก่ข้าพระองค์ด้วย ขอพระองค์ทรงประทานอำนาจอันกว้างขวางแก่ข้าพระองค์ ซึ่งไม่คู่ควรแก่ผู้ใดนอกจากข้าพระองค์ แท้จริงพระองค์เท่านั้นเป็นผู้ทรงประทานให้อย่างมากมาย.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383240.1193264
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630672.1872065
   },
   "38:36": {
     "is_processed": true,
@@ -33577,12 +33577,12 @@
   },
   "38:38": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "และพวกอื่น ๆ ถูกพันธนาการด้วยโซ่ติดกัน.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383242.0664027
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630674.0432396
   },
   "38:39": {
     "is_processed": true,
@@ -33630,12 +33630,12 @@
   },
   "38:44": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "และจงเอาเศษไม้สักกำหนึ่งแล้วฟาดด้วยมัน และอย่าถอนคำสาบาน แท้จริงเราพบว่า เขา (อัยยู๊บ) เป็นผู้อดทน บ่าวผู้ประเสริฐ แท้จริงเขาหันหน้าเข้าสู่เราเสมอ.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383247.1721942
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630675.1817174
   },
   "38:45": {
     "is_processed": true,
@@ -33648,39 +33648,39 @@
   },
   "38:46": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "เราได้เลือกพวกเขา โดยเฉพาะเพื่อเตือนให้รำลึกถึงปรโลก.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383249.3780363
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630676.1263695
   },
   "38:47": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "และแท้จริงพวกเขานั้น ในทัศนะของเรา แน่นอนอยู่ในหมู่ผู้ได้รับเลือก เพราะพวกเขาเป็นคนดี.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383250.2760122
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630678.0866325
   },
   "38:48": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "และจงรำลึกถึงอิสมาอีล และอัลยะซะอฺ และซัลกิฟลิ และทุกคนอยู่ในหมู่ผู้ดีเลิศ.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383251.2766395
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630680.1994364
   },
   "38:49": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "นี่คือข้อตักเตือน และแท้จริงสำหรับบรรดาผู้ยำเกรงนั้น แน่นอนทางกลับ (ของพวกเขา) ย่อมประเสริฐแท้.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383252.2247787
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630681.088951
   },
   "38:50": {
     "is_processed": true,
@@ -33728,12 +33728,12 @@
   },
   "38:56": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
     "final_thai": "คือนรกญะฮันนัม พวกเขาจะเข้าไปเผาไหม้ในมัน ดังนั้นมันเป็นที่พำนักที่ชั่วช้ายิ่ง.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383258.3184555
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630687.4390178
   },
   "38:57": {
     "is_processed": true,
@@ -33762,21 +33762,21 @@
   },
   "38:60": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "พวกเขากล่าวว่า แต่ว่าพวกท่านต่างหาก ไม่มีการต้อนรับพวกท่าน เพราะพวกท่านได้เตรียมตัวไว้สำหรับเรา ดังนั้นมันเป็นที่พักอันชั่วช้า.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383261.409507
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630688.408049
   },
   "38:61": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "พวกเขากล่าวว่า ข้าแต่พระเจ้าของเรา ผู้ใดที่ได้เตรียมการลงโทษนี้ไว้ให้แก่เรา ขอพระองค์ได้ทรงโปรดเพิ่มการลงโทษแก่เขาเป็นสองเท่าในไฟนรก.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383264.1785433
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630689.4149652
   },
   "38:62": {
     "is_processed": true,
@@ -33824,12 +33824,12 @@
   },
   "38:67": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "จงกล่าวเถิด (มุฮัมมัด) นี่คือข่าวสำคัญอันยิ่งใหญ่.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383269.7820592
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630691.1457293
   },
   "38:68": {
     "is_processed": true,
@@ -33842,12 +33842,12 @@
   },
   "38:69": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "ฉันไม่เคยรู้มาก่อนเลยในเรื่องของมลาอิกะฮฺ เมื่อพวกเขาโต้เถียงกัน.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383271.7467134
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630692.0840807
   },
   "38:70": {
     "is_processed": true,
@@ -33904,12 +33904,12 @@
   },
   "38:76": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "มันกล่าวว่า ข้าพระองค์ดีกว่าเขา พระองค์ทรงสร้างข้าพระองค์จากไฟ และทรงสร้างเขาจากดิน.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383278.0144787
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630693.0876672
   },
   "38:77": {
     "is_processed": true,
@@ -33940,12 +33940,12 @@
   },
   "38:80": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
-    "final_thai": "พระองค์ตรัสว่า ดังนั้น แท้จริงเจ้าอยู่ในหมู่ผู้ถูกประวิงเวลา.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383281.7113643
+    "final_thai": "พระองค์ตรัสว่า ดังนั้นแท้จริงเจ้าอยู่ในหมู่ผู้ถูกประวิงเวลา.",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630694.3179867
   },
   "38:81": {
     "is_processed": true,
@@ -36157,12 +36157,12 @@
   },
   "35:32": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
-    "final_thai": "และเราได้ให้คัมภีร์ เป็นมรดกสืบทอดมา แก่บรรดาผู้ที่เราคัดเลือกแล้วจากปวงบ่าวของเรา บางคนในหมู่พวกเขาเป็นผู้อธรรมแก่ตัวเอง และบางคนในหมู่พวกเขาเป็นผู้เดินสายกลาง และบางคนในหมู่พวกเขาเป็นผู้รุดหน้าในการทำความดีทั้งหลาย ด้วยอนุมัติของอัลลอฮฺ นั่นคือความโปรดปรานอันใหญ่หลวง.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383228.178719
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
+    "final_thai": "และเราได้ให้คัมภีร์เป็นมรดกสืบทอดมาแก่บรรดาผู้ที่เราคัดเลือกแล้วจากปวงบ่าวของเรา บางคนในหมู่พวกเขาเป็นผู้อธรรมแก่ตัวเอง และบางคนในหมู่พวกเขาเป็นผู้เดินสายกลาง และบางคนในหมู่พวกเขาเป็นผู้รุดหน้าในการทำความดีทั้งหลาย ด้วยอนุมัติของอัลลอฮฺ นั่นคือความโปรดปรานอันใหญ่หลวง.",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630661.9864945
   },
   "36:64": {
     "is_processed": true,
@@ -36643,12 +36643,12 @@
   },
   "43:18": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "และผู้ที่ถูกเติบโตเลี้ยงดูมาท่ามกลางเครื่องประดับ และในการโต้ถียงก็ไม่มีอะไรชัดแจ้ง (จะตั้งให้เป็นภาคีต่ออัลลอฮ์) กระนั้นหรือ?",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383452.6627805
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630696.4643643
   },
   "43:19": {
     "is_processed": true,
@@ -37156,12 +37156,12 @@
   },
   "43:75": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "การลงโทษนั้นจะไม่ถูกลดหย่อนแก่พวกเขา และในการลงโทษนั้นพวกเขาเป็นผู้หมดหวัง",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383513.373893
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630697.5569348
   },
   "43:76": {
     "is_processed": true,
@@ -37660,12 +37660,12 @@
   },
   "44:42": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
     "final_thai": "เว้นแต่ผู้ที่อัลลอฮฺทรงมีเมตตา แท้จริงพระองค์เป็นผู้ทรงอำนาจ ผู้ทรงเมตตาเสมอ.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383572.84541
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630704.6338294
   },
   "44:43": {
     "is_processed": true,
@@ -37714,12 +37714,12 @@
   },
   "44:48": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "แล้วจงราดลงบนหัวของเขาเป็นการลงโทษแห่งน้ำเดือด.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383579.1854339
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630705.5316412
   },
   "44:49": {
     "is_processed": true,
@@ -37885,12 +37885,12 @@
   },
   "45:8": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "เขาได้ฟังอายาต (อัลกุรอาน) ของอัลลอฮฺถูกสาธยายแก่เขา แล้วเขาก็ดื้อรั้นอย่างยโส ประหนึ่งว่าเขาไม่เคยฟังอายาตมาก่อนเลย. ดังนั้น จงแจ้งข่าวแก่เขาถึงการลงโทษอันเจ็บปวด",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383599.4774358
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630708.592961
   },
   "45:9": {
     "is_processed": true,
@@ -37903,12 +37903,12 @@
   },
   "45:10": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
     "final_thai": "เบื้องหน้าพวกเขาคือนรกญะฮันนัม และสิ่งที่พวกเขาขวนขวายไว้จะไม่อำนวยประโยชน์อันใดแก่พวกเขาได้ และสิ่งที่พวกเขายึดถือเอาเป็นผู้คุ้มครองอื่นจากอัลลอฮฺ ก็จะไม่อำนวยประโยชน์เช่นกัน. และสำหรับพวกเขาจะได้รับการลงโทษอย่างใหญ่หลวง",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383601.9994104
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630718.8673847
   },
   "45:11": {
     "is_processed": true,
@@ -37930,12 +37930,12 @@
   },
   "45:13": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "และพระองค์ทรงทำให้สิ่งที่อยู่ในชั้นฟ้าทั้งหลาย และสิ่งที่อยู่ในแผ่นดินเป็นประโยชน์แก่พวกเจ้า ทั้งหมดนี้มาจากพระองค์. แท้จริงในการนั้น แน่นอนย่อมเป็นสัญญาณสำหรับหมู่ชนผู้ใคร่ครวญ",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383605.094626
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630721.1885788
   },
   "45:14": {
     "is_processed": true,
@@ -37948,12 +37948,12 @@
   },
   "45:15": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
-    "final_thai": "ผู้ใดกระทำความดีก็จะได้แก่ตัวของเขาเอง และผู้ใดกระทำความชั่ว ก็จะตกหนักแก่ตัวของเขาเอง. แล้วพวกเจ้าย่อมจะกลับไปหาพระเจ้าของพวกเจ้า",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383607.152398
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
+    "final_thai": "ผู้ใดกระทำความดี ก็จะได้แก่ตัวของเขาเอง และผู้ใดกระทำความชั่ว ก็จะตกหนักแก่ตัวของเขาเอง. แล้วพวกเจ้าย่อมจะกลับไปหาพระเจ้าของพวกเจ้า",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630730.6383314
   },
   "45:16": {
     "is_processed": true,
@@ -37966,30 +37966,30 @@
   },
   "45:17": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
     "final_thai": "และเราได้ประทานหลักฐานอันชัดแจ้งทั้งหลายแก่พวกเขาเกี่ยวกับเรื่องนี้. พวกเขามิได้ขัดแย้งกัน เว้นแต่หลังจากได้มีความรู้มายังพวกเขาแล้ว แต่เนื่องจากความริษยาระหว่างพวกเขากันเอง. แท้จริงพระเจ้าของเจ้าจะทรงตัดสินระหว่างพวกเขาในวันกิยามะฮฺ ในสิ่งที่พวกเขาได้ขัดแย้งกันในเรื่องนั้น",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383609.4722655
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630753.4111454
   },
   "45:18": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "แล้วเราได้ตั้งเจ้าให้อยู่บนแนวทางหนึ่งในเรื่องของศาสนาที่แท้จริง. ดังนั้นจงปฏิบัติตามแนวทางนั้น และอย่าได้ปฏิบัติตามอารมณ์ต่ำของบรรดาผู้ไม่รู้",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383610.5967655
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630755.2560618
   },
   "45:19": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
     "final_thai": "แท้จริงพวกเขาไม่อาจจะช่วยเจ้าให้พ้นจากอัลลอฮฺแต่อย่างใด. และแท้จริงพวกอธรรมนั้นต่างก็เป็นมิตรซึ่งกันและกัน แต่อัลลอฮฺนั้นทรงเป็นผู้คุ้มครองบรรดาผู้ยำเกรง",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383611.6000204
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630763.641244
   },
   "45:20": {
     "is_processed": true,
@@ -38038,12 +38038,12 @@
   },
   "45:25": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "และเมื่ออายาตต่าง ๆ อันชัดแจ้งของเราถูกสาธยายแก่พวกเขา, ข้อขัดแย้งของพวกเขาก็ไม่มีอะไร นอกจากพวกเขาจะกล่าวว่า จงนำบรรพบุรุษของเราให้คืนชีพกลับมา หากพวกท่านเป็นผู้สัตย์จริง",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383617.843133
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630764.5884058
   },
   "45:26": {
     "is_processed": true,
@@ -38056,12 +38056,12 @@
   },
   "45:27": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "และอำนาจเด็ดขาดแห่งชั้นฟ้าทั้งหลายและแผ่นดินนั้นเป็นของอัลลอฮฺ. วันแห่งยามอวสานจะเกิดขึ้น ในวันนั้นบรรดาผู้กล่าวเท็จจะขาดทุนอย่างย่อยยับ",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383619.9011443
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630765.8299644
   },
   "45:28": {
     "is_processed": true,
@@ -38695,12 +38695,12 @@
   },
   "47:26": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "ทั้งนี้เพราะว่าพวกเขาได้กล่าวแก่บรรดาผู้เกลียดชังสิ่งที่อัลลอฮฺทรงประทานลงมาว่า เราจะเชื่อฟังปฏิบัติตามในกิจการบางอย่าง แต่อัลลอฮฺทรงทราบดีถึงความลับของพวกเขา",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383703.418414
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630767.3778334
   },
   "47:27": {
     "is_processed": true,
@@ -39037,21 +39037,21 @@
   },
   "48:26": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "ขณะที่พวกปฏิเสธศรัทธาได้ทำให้ความหยิ่งยโสมีขึ้นในจิตใจของพวกเขาซึ่งเป็นความหยิ่งยโส ในสมัยแห่งความงมงาย อัลลอฮฺจึงประทานความเงียบสงบของพระองค์ให้แก่รอซูลของพระองค์ และแก่บรรดาผู้ศรัทธา และทรงให้พวกเขาตั้งมั่นอยู่บนคำกล่าวแห่งความยำเกรง (คำกล่าวชาฮาดะฮฺ) โดยที่พวกเขามีสิทธิยิ่งต่อคำกล่าวนี้ และเหมาะสมคู่ควรยิ่งอีกด้วย และอัลลอฮฺนั้นทรงรอบรู้ทุกสิ่งทุกอย่าง.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383750.2277975
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630769.2101855
   },
   "48:27": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "โดยแน่นอน อัลลอฮฺได้ทรงทำให้ความฝันนั้นสมจริงแก่รอซูลของพระองค์ด้วยความจริงแน่นอน พวกเจ้าจะได้เข้าสู่มัสยิดอัลฮะรอมอย่างปลอดภัยหากอัลลอฮฺทรงประสงค์ (อินชาอัลลอฮฺ) โดย (บางคน) โกนผมของพวกเจ้าและ (อีกบางคน) ตัดผม พวกเจ้าอย่าได้หวาดกลัว เพราะอัลลอฮฺทรงรอบรู้สิ่งที่พวกเจ้าไม่รู้ ดังนั้น พระองค์จึงได้ทรงกำหนดชัยชนะอื่นจากนั้น ซึ่งชัยชนะอันใกล้นี้.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383751.7848058
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630770.892613
   },
   "48:28": {
     "is_processed": true,
@@ -39127,12 +39127,12 @@
   },
   "49:7": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
-    "final_thai": "และพวกเจ้าพึงรู้เถิดว่า ในหมู่พวกเจ้านั้นมีรอซูลของอัลลอฮฺอยู่ หากเขา (มุฮัมมัด) เชื่อฟังพวกเจ้าในส่วนใหญ่ของกิจการแล้ว แน่นอนพวกเจ้าก็จะลำบากกัน แต่อัลลอฮฺทรงให้การศรัทธาเป็นที่รักแก่พวกเจ้า และได้ทรงประดับมันไว้ในดวงใจของพวกเจ้า และทรงให้การปฏิเสธศรัทธา และความชั่วช้า และการฝ่าฝืนเป็นที่น่าเกลียดชังแก่พวกเจ้า ชนเหล่านั้นคือพวกที่ดำเนินอยู่ในแนวทางที่ถูกต้อง",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383763.4801934
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
+    "final_thai": "และพวกเจ้าพึงรู้เถิดว่า ในหมู่พวกเจ้านั้นมีรอซูลของอัลลอฮฺอยู่ หากเขา (มุฮัมมัด) เชื่อฟังพวกเจ้าในส่วนใหญ่ของกิจการแล้ว แน่นอนพวกเจ้าก็จะลำบากกัน แต่ อัลลอฮฺทรงให้การศรัทธาเป็นที่รักแก่พวกเจ้า และได้ทรงประดับมันไว้ในดวงใจของพวกเจ้า และทรงให้การปฏิเสธศรัทธา และความชั่วช้า และการฝ่าฝืนเป็นที่น่าเกลียดชังแก่พวกเจ้า ชนเหล่านั้นคือพวกที่ดำเนินอยู่ในแนวทางที่ถูกต้อง",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630774.1622403
   },
   "49:8": {
     "is_processed": true,
@@ -41017,12 +41017,12 @@
   },
   "53:45": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "และแท้จริงพระองค์ทรงสร้างสามีภรรยาคู่หนึ่ง, เป็นเพศชาย และเพศหญิง",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787383986.1883194
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630776.0670128
   },
   "53:46": {
     "is_processed": true,
@@ -41359,12 +41359,12 @@
   },
   "54:21": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
-    "final_thai": "ดังนั้นการลงโทษของเรา และการตักเตือนของเราเป็นเช่นใดบ้าง",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384024.784017
+    "final_thai": "ดังนั้นการลงโทษของเราและการตักเตือนของเราเป็นเช่นใดบ้าง",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630777.196384
   },
   "54:22": {
     "is_processed": true,
@@ -41647,12 +41647,12 @@
   },
   "54:53": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "และทุก ๆ สิ่งทั้งเล็กและใหญ่ ก็ได้ถูกบันทึกไว้แล้ว",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384056.9912918
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630779.0205033
   },
   "54:54": {
     "is_processed": true,
@@ -43051,12 +43051,12 @@
   },
   "56:76": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "และแท้จริงมันเป็นการสาบานอันยิ่งใหญ่ หากพวกเจ้ารู้.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384218.59667
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630780.1251678
   },
   "56:77": {
     "is_processed": true,
@@ -43078,12 +43078,12 @@
   },
   "56:79": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "ไม่มีผู้ใดจะแตะต้องอัลกุรอาน นอกจากบรรดาผู้บริสุทธิ์เท่านั้น.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384221.6636574
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630781.999006
   },
   "56:80": {
     "is_processed": true,
@@ -43204,12 +43204,12 @@
   },
   "56:93": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "ดังนั้นสิ่งที่เตรียมไว้สำหรับเขาก็คือ น้ำร้อนที่กำลังเดือด",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384236.0195165
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630784.169951
   },
   "56:94": {
     "is_processed": true,
@@ -43303,12 +43303,12 @@
   },
   "57:8": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "และไฉนเล่าพวกเจ้าจึงไม่ศรัทธาต่ออัลลอฮฺ ทั้ง ๆ ที่รอซูลได้เรียกร้องพวกเจ้าให้ศรัทธาต่อพระเจ้าของพวกเจ้า และแน่นอน พระองค์ได้ทรงเอาสัญญากับพวกเจ้าแล้ว หากพวกเจ้าเป็นผู้ศรัทธา.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384247.9188743
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630785.4052732
   },
   "57:9": {
     "is_processed": true,
@@ -43321,12 +43321,12 @@
   },
   "57:10": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
-    "final_thai": "และไฉนเล่าพวกเจ้าจึงไม่บริจาคในทางของอัลลอฮฺทั้ง ๆ ที่มรดกแห่งชั้นฟ้าทั้งหลายและแผ่นดินนี้เป็นของอัลลอฮฺ ในหมู่พวกเจ้านั้นมีผู้บริจาคและได้ต่อสู้ (ในทางของอัลลอฮฺ) ก่อนการพิชิต (นครมักกะฮฺ) ชนเหล่านั้นย่อมมีฐานะสูงส่งกว่าบรรดาผู้บริจาค และต่อสู้ (ในทางของอัลลอฮฺ) หลังจากพิชิต (นครมักกะฮฺ) และอัลลอฮฺทรงสัญญาความดีงาม (สวนสวรรค์) แก่ทั้งสองฝ่าย และอัลลอฮฺนั้นทรงรอบรู้อย่างละเอียดในสิ่งที่พวกเจ้ากระทำ.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384250.4565349
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
+    "final_thai": "และไฉนเล่าพวกเจ้าจึงไม่บริจาคในทางของอัลลอฮฺ ทั้ง ๆ ที่มรดกแห่งชั้นฟ้าทั้งหลายและแผ่นดินนี้เป็นของอัลลอฮฺ ในหมู่พวกเจ้านั้นมีผู้บริจาคและได้ต่อสู้ (ในทางของอัลลอฮฺ) ก่อนการพิชิต (นครมักกะฮฺ) ชนเหล่านั้นย่อมมีฐานะสูงส่งกว่าบรรดาผู้บริจาคและต่อสู้ (ในทางของอัลลอฮฺ) หลังจากพิชิต (นครมักกะฮฺ) และอัลลอฮฺทรงสัญญาความดีงาม (สวนสวรรค์) แก่ทั้งสองฝ่าย และอัลลอฮฺนั้นทรงรอบรู้อย่างละเอียดในสิ่งที่พวกเจ้ากระทำ.",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630788.4481544
   },
   "57:11": {
     "is_processed": true,
@@ -43339,12 +43339,12 @@
   },
   "57:12": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "วันที่เจ้าจะเห็นบรรดาผู้ศรัทธาชายและบรรดาผู้ศรัทธาหญิง แสงสว่างของพวกเขาจะฉายแสง ณ เบื้องหน้าของพวกเขา และทางเบื้องขวาของพวกเขา (จะมีเสียงกล่าวว่า) วันนี้มีข่าวดีแก่พวกเจ้า คือสวนสวรรค์หลากหลายมีแม่น้ำหลายสายไหลผ่าน ณ เบื้องล่างของมันโดยพำนักอยู่ในนั้นตลอดกาล นั่นคือชัยชนะอันยิ่งใหญ่.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384254.6628335
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630789.8004763
   },
   "57:13": {
     "is_processed": true,
@@ -43366,12 +43366,12 @@
   },
   "57:15": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "ดังนั้นวันนี้การไถ่บาปจะไม่ถูกรับจากพวกเจ้า และจากบรรดาผู้ปฏิเสธศรัทธา ที่พำนักของพวกเจ้าคือไฟนรก มันเป็นสถานที่อันเหมาะสมแก่พวกเจ้า และมันเป็นทางกลับที่ชั่วร้ายยิ่ง.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384258.978367
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630791.6374025
   },
   "57:16": {
     "is_processed": true,
@@ -43384,12 +43384,12 @@
   },
   "57:17": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
-    "final_thai": "พึงทราบเถิดว่า แท้จริงอัลลอฮฺนั้น ทรงให้แผ่นดินมีชีวิตชีวาหลังจากการแห้งแล้งของมัน แน่นอน เราได้ทำให้สัญญาณทั้งหลายแจ่มแจ้งแก่พวกเจ้าแล้ว เพื่อพวกเจ้าจะได้ใช้สติปัญญาใคร่ครวญ.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384261.5888941
+    "final_thai": "พึงทราบเถิดว่า แท้จริงอัลลอฮฺนั้นทรงให้แผ่นดินมีชีวิตชีวาหลังจากการแห้งแล้งของมัน แน่นอนเราได้ทำให้สัญญาณทั้งหลายแจ่มแจ้งแก่พวกเจ้าแล้ว เพื่อพวกเจ้าจะได้ใช้สติปัญญาใคร่ครวญ.",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630792.680647
   },
   "57:18": {
     "is_processed": true,
@@ -43411,12 +43411,12 @@
   },
   "57:20": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "พึงทราบเถิดว่า แท้จริงการมีชีวิตอยู่ในโลกนี้มิใช่อื่นใด เว้นแต่เป็นการละเล่น และการสนุกสนานร่าเริง และเครื่องประดับ และความโอ้อวดระหว่างพวกเจ้า และการแข่งขันกันสะสมในทรัพย์สินและลูกหลาน เปรียบเสมือนเช่นน้ำฝนที่การงอกเงยพืชผลยังความพอใจให้แก่กสิกร แล้วมันก็เหี่ยวแห้ง เจ้าจะเห็นมันเป็นสีเหลือง แล้วมันก็กลายเป็นเศษเป็นชิ้นแห้ง ส่วนในวันปรโลกนั้นมีการลงโทษอย่างสาหัส และมีการอภัยโทษและความโปรดปรานจากอัลลอฮฺ และการมีชีวิตอยู่ในโลกนี้ มิใช่อื่นใด นอกจากการแสวงหาผลประโยชน์แห่งการหลอกลวงเท่านั้น.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384265.8149683
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630794.335127
   },
   "57:21": {
     "is_processed": true,
@@ -43447,12 +43447,12 @@
   },
   "57:24": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "คือบรรดาผู้ที่ตระหนี่ และสั่งสอนคนอื่นให้ตระหนี่ และผู้ที่ผินหลังให้ แท้จริงอัลลอฮฺนั้นพระองค์ทรงพอเพียง และทรงได้รับการสรรเสริญอย่างแน่นอน.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384270.4121916
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630796.4735396
   },
   "57:25": {
     "is_processed": true,
@@ -43663,12 +43663,12 @@
   },
   "58:19": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
-    "final_thai": "ชัยฏอนมารร้ายได้เข้าไปครอบงำพวกเขาเสียแล้ว มันจึงทำให้พวกเขาลืมการรำลึกถึงอัลลอฮฺ ชนเหล่านั้น คือบรรดาพรรคพวกของชัยฏอน พึงทราบเถิดว่า แท้จริงพรรคพวกของชัยฏอนนั้น พวกเขาเป็นผู้ขาดทุน",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384305.3901913
+    "final_thai": "ชัยฏอนมารร้ายได้เข้าไปครอบงำพวกเขาเสียแล้ว มันจึงทำให้พวกเขาลืมการรำลึกถึงอัลลอฮฺ ชนเหล่านั้นคือบรรดาพรรคพวกของชัยฏอน พึงทราบเถิดว่าแท้จริงพรรคพวกของชัยฏอนนั้นพวกเขาเป็นผู้ขาดทุน",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630797.675646
   },
   "58:20": {
     "is_processed": true,
@@ -43996,12 +43996,12 @@
   },
   "60:10": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "โอ้บรรดาผู้ศรัทธาเอ๋ย เมื่อบรรดาหญิงผู้ศรัทธาเป็นผู้ลี้ภัยมาหาพวกเจ้า ก็จงสอบสวนพวกนาง อัลลอฮฺทรงรู้ดียิ่งในการศรัทธาของพวกนาง ครั้นเมื่อพวกเจ้ารู้ว่าพวกนางเป็นผู้ศรัทธา ก็อย่าได้ส่งพวกนางกลับไปยังพวกปฏิเสธศรัทธา พวกนางมิได้เป็นที่อนุมัติแก่พวกเขา และพวกเขาก็มิได้เป็นที่อนุมัติแก่พวกนาง และจงจ่ายคืนให้พวกเขา (สามีเดิมที่เป็นกาเฟร) สิ่งที่พวกเขาได้จ่ายไป (มะฮัร) และไม่เป็นบาปอันใดแก่พวกเจ้าที่จะแต่งงานกับพวกนาง เมื่อพวกเจ้าได้ให้แก่พวกนางซึ่งของหมั้นของพวกนาง และอย่าหน่วงเหนี่ยวพันธะการแต่งงานของบรรดาหญิงผู้ปฏิเสธศรัทธา และจงขอคืนสิ่งที่พวกเจ้าได้ใช้จ่ายไป และให้พวกเขาขอคืนสิ่งที่พวกเขาได้ใช้จ่ายไป นั่นคือข้อตัดสินของอัลลอฮฺ พระองค์ทรงตัดสินในระหว่างพวกเจ้า และอัลลอฮฺเป็นผู้ทรงรอบรู้ ผู้ทรงปรีชาญาณ.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384354.3483922
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630799.556004
   },
   "60:11": {
     "is_processed": true,
@@ -44203,12 +44203,12 @@
   },
   "62:6": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "จงกล่าวเถิด (มุฮัมมัด) โอ้บรรดายิวเอ๋ย หากพวกท่านอ้างว่าพวกท่านเป็นมิตรของอัลลอฮฺอื่นจากมนุษย์ทั้งหลายแล้วไซร้ ดังนั้นพวกท่านก็จงมุ่งหวังความตายกันเถิด หากพวกท่านเป็นผู้สัตย์จริง.",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384382.735822
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630802.2414153
   },
   "62:7": {
     "is_processed": true,
@@ -44608,12 +44608,12 @@
   },
   "65:11": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "(และ) รอซูลท่านหนึ่ง (มุฮัมมัด) มาสาธยายอายาตต่าง ๆ อันชัดแจ้งของอัลลอฮฺแก่พวกเจ้า เพื่อจะได้นำบรรดาผู้ศรัทธาและกระทำความดีทั้งหลายออกจากความมืดทึบทั้งมวลสู่แสงสว่าง ส่วนผู้ใดศรัทธาต่ออัลลอฮฺและกระทำความดี พระองค์จะทรงให้เขาเข้าสวนสวรรค์หลากหลาย ณ เบื้องล่างสวนสวรรค์นั้นมีลำน้ำหลายสายไหลผ่าน พวกเขาเป็นผู้พำนักอยู่ในนั้นตลอดกาล แน่นอนได้ทรงจัดปัจจัยยังชีพอย่างดีเลิศไว้ให้แก่เขาแล้ว",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384439.5203445
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630805.2377462
   },
   "65:12": {
     "is_processed": true,
@@ -44788,12 +44788,12 @@
   },
   "67:7": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
-    "final_thai": "เมื่อพวกเขาถูกโยนลงไปในนรก พวกเขาจะได้ยินเสียงของมันครวญครางขณะที่มันกำลังเดือนพล่าน",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384464.4671862
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
+    "final_thai": "เมื่อพวกเขาถูกโยนลงไปในนรก พวกเขาจะได้ยินเสียงของมันครวญคราง ขณะที่มันกำลังเดือนพล่าน",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630811.89467
   },
   "67:8": {
     "is_processed": true,
@@ -45103,12 +45103,12 @@
   },
   "68:12": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "ผู้ขัดขวางการทำความดี ผู้อธรรมทำร้ายบาปหนา",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384547.7251253
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630814.1943996
   },
   "68:13": {
     "is_processed": true,
@@ -45265,12 +45265,12 @@
   },
   "68:30": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "แล้วบางคนในหมู่พวกเขาก็หันไปต่อว่าซึ่งกันแล้วกัน",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384569.1725671
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630815.0818248
   },
   "68:31": {
     "is_processed": true,
@@ -45346,21 +45346,21 @@
   },
   "68:39": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "หรือว่าพวกเจ้าสัญญาผูกพันกับเราจนกระทั่งถึงวันกิยามะฮฺว่า แท้จริงสำหรับพวกเจ้านั้นจะได้ตามที่พวกเจ้าตัดสินเอาไว้",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384578.8125548
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630816.520747
   },
   "68:40": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "(มุฮัมมัด) จงถามพวกเขาดูว่า คนใดในหมู่พวกเขาจะเป็นหัวหน้าในการตัดสินเรื่องนั้น",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384579.81354
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630817.4669528
   },
   "68:41": {
     "is_processed": true,
@@ -46570,12 +46570,12 @@
   },
   "71:27": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
-    "final_thai": "เพราะแท้จริง หากพระองค์ทรงปล่อยให้พวกเขาหลงเหลืออยู่ พวกเขาก็จะทำให้ปวงบ่าวของพระองค์หลงผิด และพวกเขานั้นจะให้กำเนิดแต่พวกเลวทราม พวกปฏิเสธศรัทธาเท่านั้น",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384728.7968612
+    "final_thai": "เพราะแท้จริงหากพระองค์ทรงปล่อยให้พวกเขาหลงเหลืออยู่ พวกเขาก็จะทำให้ปวงบ่าวของพระองค์หลงผิด และพวกเขานั้นจะให้กำเนิดแต่พวกเลวทราม พวกปฏิเสธศรัทธาเท่านั้น",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630818.6762328
   },
   "71:28": {
     "is_processed": true,
@@ -46804,12 +46804,12 @@
   },
   "72:25": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "จงกล่าวเถิด (มุฮัมมัด) ฉันไม่รู้สิ่งที่พวกท่านถูกสัญญาไว้นั้น หรือว่าพระเจ้าของฉันจะทรงกำหนดเวลาการลงโทษนั้นให้ห่างไกลออกไป",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384756.468669
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630819.8032675
   },
   "72:26": {
     "is_processed": true,
@@ -47182,12 +47182,12 @@
   },
   "74:19": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
     "final_thai": "ดังนั้น เขาได้รับความหายนะ, เขาจะคาดคะเนได้อย่างไร",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384802.2406807
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630826.972867
   },
   "74:20": {
     "is_processed": true,
@@ -47371,12 +47371,12 @@
   },
   "74:40": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "อยู่ในสวนสวรรค์หลากหลาย, พวกเขาจะไต่ถามซึ่งกันและกัน",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384824.9297984
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630827.9698315
   },
   "74:41": {
     "is_processed": true,
@@ -48028,12 +48028,12 @@
   },
   "76:17": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.5-flash",
     "final_thai": "และในสวนสวรรค์นั้น พวกจะได้รับเครื่องดื่มจากแก้วซึ่งผสมด้วยขิง",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787384906.7941742
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630836.1073003
   },
   "76:18": {
     "is_processed": true,
@@ -48775,21 +48775,21 @@
   },
   "78:19": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
-    "final_thai": "และชั้นฟ้าจะถูกเปิดออกแล้วก็จะมีประตูหลายบาน",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787385000.1939025
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
+    "final_thai": "และชั้นฟ้าจะถูกเปิดออก แล้วก็จะมีประตูหลายบาน",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630838.753432
   },
   "78:20": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
-    "final_thai": "และเทือกเขาจะถูกให้เคลื่อนออกไปแล้วก็กลายเป็นภาพลวง",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787385001.2197359
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
+    "final_thai": "และเทือกเขาจะถูกให้เคลื่อนออกไป แล้วก็กลายเป็นภาพลวง",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630840.8861558
   },
   "78:21": {
     "is_processed": true,
@@ -49945,12 +49945,12 @@
   },
   "81:21": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
-    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v3_nfc_flash",
+    "model": "gemini-3.1-flash-lite",
     "final_thai": "ผู้ใดรับการจงรักภักดี, ผู้ซื่อสัตย์ ณ ที่โน้น",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787385141.7104266
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630843.032295
   },
   "81:22": {
     "is_processed": true,
@@ -50080,12 +50080,12 @@
   },
   "82:7": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "ผู้ทรงบังเกิดเจ้า, แล้วทรงทำให้เจ้าสมบูรณ์, แล้วก็ทรงทำให้เจ้าสมส่วน",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787385158.1273665
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630844.377266
   },
   "82:8": {
     "is_processed": true,
@@ -50305,12 +50305,12 @@
   },
   "83:13": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
     "final_thai": "เมื่อบรรดาอายาตของเราถูกอ่านแก่เขา เขาจะกล่าวว่านี่คือนิยายเหลวไหวสมัยก่อน",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787385186.0927892
+    "status": "CLEAN",
+    "char_lock_verified": true,
+    "timestamp": 1787630845.5503318
   },
   "83:14": {
     "is_processed": true,
@@ -52780,12 +52780,12 @@
   },
   "98:6": {
     "is_processed": true,
-    "prompt_version": "v2_nfc",
+    "prompt_version": "v3_nfc_flash",
     "model": "gemini-3.5-flash-lite",
-    "final_thai": "แท้จริงบรรดาผู้ปฏิเสธศรัทธาในหมู่อะฮฺลุลกิตาบ และบูชาเจว็ดนั้นจะอยู่ในนรกญะฮันนัม พวกเขาเป็นผู้พำนักอยู่ในนั้นตลอดกาล ชนเหล่านั้น พวกเขาเป็นมนุษย์ที่ชั่วช้ายิ่ง",
-    "status": "REJECTED_CHARACTER_MISMATCH",
-    "char_lock_verified": false,
-    "timestamp": 1787385479.7081738
+    "final_thai": "แท้จริงบรรดาผู้ปฏิเสธศรัทธาในหมู่อะฮฺลุลกิตาบและบูชาเจว็ดนั้นจะอยู่ในนรกญะฮันนัม พวกเขาเป็นผู้พำนักอยู่ในนั้นตลอดกาล ชนเหล่านั้น พวกเขาเป็นมนุษย์ที่ชั่วช้ายิ่ง",
+    "status": "SPACING_OPTIMIZED",
+    "char_lock_verified": true,
+    "timestamp": 1787630846.835964
   },
   "98:7": {
     "is_processed": true,
