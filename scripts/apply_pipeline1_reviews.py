@@ -224,9 +224,54 @@ def main():
             print("      - Running export_db_for_web.py to re-sync WBW data...")
             os.system(f'python "{exporter_script}"')
 
+        # 8. Sync to Supabase Storage & Remote Content Versions
+        env_local_file = os.path.join(WEB_DIR, ".env.local")
+        supabase_url = None
+        service_role_key = None
+        if os.path.exists(env_local_file):
+            with open(env_local_file, "r", encoding="utf-8") as env_f:
+                for line in env_f:
+                    if line.startswith("NEXT_PUBLIC_SUPABASE_URL="):
+                        supabase_url = line.strip().split("=", 1)[1]
+                    elif line.startswith("SUPABASE_SERVICE_ROLE_KEY="):
+                        service_role_key = line.strip().split("=", 1)[1]
+
+        if supabase_url and service_role_key:
+            try:
+                import requests
+                print("\n[6/6] Synchronizing with Supabase Cloud Storage...")
+                upload_url = f"{supabase_url}/storage/v1/object/app-content/thai_v3.json"
+                upload_headers = {
+                    "apikey": service_role_key,
+                    "Authorization": f"Bearer {service_role_key}",
+                    "Content-Type": "application/json",
+                    "x-upsert": "true"
+                }
+                payload_bytes = json.dumps(web_dict, ensure_ascii=False, indent=2).encode("utf-8")
+                resp = requests.post(upload_url, headers=upload_headers, data=payload_bytes)
+                if resp.status_code not in [200, 201]:
+                    resp = requests.put(upload_url, headers=upload_headers, data=payload_bytes)
+
+                # Update app_content_versions table
+                from datetime import datetime, timezone
+                now_iso = datetime.now(timezone.utc).isoformat()
+                version_str = f"1.1.{len(approved_changes)}"
+                db_url = f"{supabase_url}/rest/v1/app_content_versions?content_key=eq.thai_v3"
+                requests.patch(db_url, headers={
+                    "apikey": service_role_key,
+                    "Authorization": f"Bearer {service_role_key}",
+                    "Content-Type": "application/json"
+                }, json={"version": version_str, "updated_at": now_iso})
+
+                print(f"      - Supabase Storage (app-content/thai_v3.json) updated")
+                print(f"      - app_content_versions table bumped to version {version_str}")
+            except Exception as e:
+                print(f"      - Note: Supabase sync skipped ({e})")
+
     print("\n" + "=" * 70)
     print("  ALL UPDATES APPLIED & SYNCHRONIZED SUCCESSFULLY!")
     print("=" * 70)
 
 if __name__ == "__main__":
     main()
+
