@@ -1,6 +1,6 @@
 """
 =============================================================================
-PIPELINE 2: LLM-POWERED THAI CLAUSE SPACING & READING CADENCE ENGINE
+PIPELINE 2: LLM-POWERED THAI CLAUSE SPACING & READING CADENCE ENGINE (v3_nfc_flash)
 =============================================================================
 Target: King Fahd Complex Thai Quran Translation (Thai v3)
 
@@ -14,11 +14,10 @@ Safety Architecture (Mathematical Character Lock):
     or bracket is altered or dropped by the LLM, the change is
     INSTANTLY REJECTED and the original text is preserved bit-for-bit.
 
-Features:
-  - Multi-Key Client Pool (Auto-detects GEMINI_API_KEY_1, _2, _3... from .env)
-  - Models: gemini-3.1-flash-lite (Primary) & gemini-3.5-flash-lite (Fallback)
-  - Dynamic Character-Budget Batching (Max 1,200 chars per prompt)
-  - Real-time Checkpointing & Resumability
+Multi-Tier Fallback Architecture:
+  - Tier 1 (High Quota): gemini-3.5-flash-lite, gemini-3.1-flash-lite (1500 RPD, 10 RPM)
+  - Tier 2 (Non-Lite Fallback): gemini-3.5-flash, gemini-2.5-flash (20 RPD, 4 RPM)
+  - Character Mismatch Guardrail: Automatically falls back to Tier 2 if Tier 1 alters characters.
 =============================================================================
 """
 
@@ -51,18 +50,19 @@ OUTPUT_JSON = os.path.join(SCRIPT_DIR, "thai_v3_spacing_improved.json")
 OUTPUT_CSV = os.path.join(SCRIPT_DIR, "thai_v3_spacing_improved.csv")
 OUTPUT_REPORT_CSV = os.path.join(SCRIPT_DIR, "thai_v3_spacing_audit_report.csv")
 
-MODELS = ["gemini-3.5-flash-lite", "gemini-2.5-flash", "gemini-3.1-flash-lite"]
+PROMPT_VERSION = "v3_nfc_flash"
 
-DEFAULT_CHAR_BUDGET = 1200  # Max Thai characters per prompt batch
-MAX_RPM_PER_KEY = 10        # Conservative RPM per API key
-MIN_INTERVAL_PER_KEY = 6.0  # Seconds between requests on the same key
+TIER1_MODELS = ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]
+TIER2_MODELS = ["gemini-3.5-flash", "gemini-2.5-flash"]
+
+DEFAULT_CHAR_BUDGET = 1200
 
 
 # ---------------------------------------------------------------------------
 # Multi-Key Rate Limiter & Client Pool
 # ---------------------------------------------------------------------------
 class RateLimiter:
-    def __init__(self, rpm: int = MAX_RPM_PER_KEY, min_interval: float = MIN_INTERVAL_PER_KEY):
+    def __init__(self, rpm: int = 10, min_interval: float = 6.0):
         self.rpm = rpm
         self.min_interval = min_interval
         self.timestamps: List[float] = []
@@ -85,10 +85,14 @@ class MultiKeyClientPool:
     def __init__(self, env_path: str):
         self.keys = self._load_keys(env_path)
         if not self.keys:
-            raise ValueError(f"No Gemini API keys found in {env_path}! Please ensure GEMINI_API_KEY_1, _2, _3 are set.")
+            raise ValueError(f"No Gemini API keys found in {env_path}! Please ensure GEMINI_API_KEY_1, _2, _3... are set.")
         self.clients = [genai.Client(api_key=k) for k in self.keys]
-        self.limiters = [RateLimiter() for _ in self.keys]
-        self.current_idx = 0
+        # Tier 1 rate limiters (Lite models: 10 RPM, 6s interval)
+        self.limiters_t1 = [RateLimiter(rpm=10, min_interval=6.0) for _ in self.keys]
+        # Tier 2 rate limiters (Non-Lite models: 4 RPM, 15s interval)
+        self.limiters_t2 = [RateLimiter(rpm=4, min_interval=15.0) for _ in self.keys]
+        self.current_idx_t1 = 0
+        self.current_idx_t2 = 0
         self.exhausted_combos = set()
         print(f"Loaded {len(self.keys)} Gemini API Key(s) from .env")
 
@@ -109,19 +113,25 @@ class MultiKeyClientPool:
                 keys.append(v)
         return keys
 
-    def get_client(self, model_name: Optional[str] = None) -> Tuple[genai.Client, int, RateLimiter]:
+    def get_client(self, tier: int = 1, model_name: Optional[str] = None) -> Tuple[genai.Client, int, RateLimiter]:
         num_keys = len(self.clients)
+        limiters = self.limiters_t1 if tier == 1 else self.limiters_t2
+        
         for _ in range(num_keys):
-            idx = self.current_idx
-            self.current_idx = (self.current_idx + 1) % num_keys
+            if tier == 1:
+                idx = self.current_idx_t1
+                self.current_idx_t1 = (self.current_idx_t1 + 1) % num_keys
+            else:
+                idx = self.current_idx_t2
+                self.current_idx_t2 = (self.current_idx_t2 + 1) % num_keys
+
             key_id = idx + 1
             if model_name and (model_name, key_id) in self.exhausted_combos:
                 continue
-            return self.clients[idx], key_id, self.limiters[idx]
+            return self.clients[idx], key_id, limiters[idx]
         
-        idx = self.current_idx
-        self.current_idx = (self.current_idx + 1) % num_keys
-        return self.clients[idx], idx + 1, self.limiters[idx]
+        idx = self.current_idx_t1 if tier == 1 else self.current_idx_t2
+        return self.clients[idx], idx + 1, limiters[idx]
 
     def mark_exhausted(self, model_name: str, key_id: int):
         self.exhausted_combos.add((model_name, key_id))
@@ -132,18 +142,19 @@ class MultiKeyClientPool:
 # Spacing System Prompt (Strict Invariant Prompting)
 # ---------------------------------------------------------------------------
 SYSTEM_INSTRUCTION = """You are an expert Thai Linguist and Quranic Prose Typography Editor.
-Your ONLY task is to adjust and optimize THAI WHITESPACE SPACING for smooth reading flow, natural breath pauses, and clause cadence.
+Your ONLY task is to adjust and optimize THAI WHITESPACE SPACING (' ') for smooth reading flow, natural breath pauses, and clause cadence.
 
 === ABSOLUTE CARDINAL RULES ===
 
 1. ZERO CHARACTER/WORD ALTERATIONS:
    - You MUST NOT add, delete, change, substitute, or rephrase ANY Thai words, letters, vowels, tone marks, or numbers.
+   - NEVER "correct" typos, spellings, or duplicate words (for example: if input contains 'ที่ที่', keep 'ที่ที่' exactly; if input has 'แล้ว' or 'และ', keep them verbatim).
    - If we strip all whitespace from your output, it MUST MATCH the original input EXACTLY character-for-character:
      `strip_whitespace(output) == strip_whitespace(input)`.
 
 2. ABSOLUTE PARENTHESES & PUNCTUATION PRESERVATION:
    - NEVER remove, add, or alter any text inside parentheses `(...)` or brackets.
-   - Preserve all original Thai punctuation (เช่น ๆ, ?, !) and bracketed tafsir notes exactly.
+   - Preserve all original Thai punctuation (เช่น ๆ, ?, !) and bracketed notes exactly.
 
 3. STRICT THAI SPACING RULES (DOs & DON'Ts):
 
@@ -185,7 +196,7 @@ Remember: DO NOT change, add, or remove any word or letter. Only adjust whitespa
 === REQUIRED JSON OUTPUT SCHEMA ===
 [
   {{
-    "ayah": 1,
+    "ayah": {batch[0]['ayah']},
     "spaced_thai": "text with optimized spacing..."
   }}
 ]
@@ -220,11 +231,8 @@ def verify_char_lock(original: str, output: str) -> bool:
 
 
 def validate_and_apply_spacing(original_thai: str, llm_spaced_thai: str) -> Tuple[bool, str, str]:
-    """
-    Asserts 100.00% character invariance with NFC Unicode normalization.
-    """
+    """Asserts 100.00% character invariance with NFC Unicode normalization."""
     if not verify_char_lock(original_thai, llm_spaced_thai):
-        # Character mismatch! Instantly REJECT and preserve original text.
         return False, original_thai, "REJECTED_CHARACTER_MISMATCH"
 
     final_text = normalize_mechanical_spacing(llm_spaced_thai)
@@ -238,7 +246,7 @@ def validate_and_apply_spacing(original_thai: str, llm_spaced_thai: str) -> Tupl
 
 
 # ---------------------------------------------------------------------------
-# API Execution with Fallback
+# API Execution Helpers
 # ---------------------------------------------------------------------------
 def clean_json_response(raw_text: str) -> str:
     raw_text = raw_text.strip()
@@ -252,36 +260,58 @@ def clean_json_response(raw_text: str) -> str:
     return raw_text
 
 
-def call_genai_with_fallbacks(pool: MultiKeyClientPool, prompt: str) -> Tuple[List[Dict[str, Any]], str, int]:
-    for model_name in MODELS:
-        for attempt in range(len(pool.clients)):
-            client, key_id, limiter = pool.get_client(model_name=model_name)
+def call_genai_model(client: genai.Client, model_name: str, prompt: str) -> List[Dict[str, Any]]:
+    response = client.models.generate_content(
+        model=model_name,
+        contents=prompt,
+        config=types.GenerateContentConfig(
+            system_instruction=SYSTEM_INSTRUCTION,
+            temperature=0.0,
+            response_mime_type="application/json",
+        )
+    )
+    raw_text = response.text or "[]"
+    cleaned = clean_json_response(raw_text)
+    parsed = json.loads(cleaned)
+    if isinstance(parsed, list):
+        return parsed
+    elif isinstance(parsed, dict):
+        if "results" in parsed and isinstance(parsed["results"], list):
+            return parsed["results"]
+        return [parsed]
+    return []
+
+
+def process_single_verse_2tier(pool: MultiKeyClientPool, surah_num: int, verse: Dict[str, Any]) -> Tuple[bool, str, str, str, int]:
+    """2-Tier Guardrail Execution:
+    1. Try High-Quota Lite Tier (gemini-3.5-flash-lite, gemini-3.1-flash-lite).
+    2. If character mismatch occurs or API busy, Fallback to Non-Lite Tier (gemini-3.5-flash, gemini-2.5-flash).
+    3. If all fail, safely preserve original text as REJECTED_CHARACTER_MISMATCH.
+    """
+    orig_text = verse["thai"]
+    prompt = create_spacing_prompt(surah_num, [verse])
+
+    # --- TIER 1: Lite High-Quota Models (1,500 RPD / 10 RPM) ---
+    for model_name in TIER1_MODELS:
+        for attempt in range(len(pool.keys)):
+            client, key_id, limiter = pool.get_client(tier=1, model_name=model_name)
             if (model_name, key_id) in pool.exhausted_combos:
                 continue
             limiter.wait()
             try:
-                response = client.models.generate_content(
-                    model=model_name,
-                    contents=prompt,
-                    config=types.GenerateContentConfig(
-                        system_instruction=SYSTEM_INSTRUCTION,
-                        temperature=0.0,
-                        response_mime_type="application/json",
-                    )
-                )
-                raw_text = response.text or "[]"
-                cleaned = clean_json_response(raw_text)
-                parsed = json.loads(cleaned)
-                if isinstance(parsed, list):
-                    return parsed, model_name, key_id
-                elif isinstance(parsed, dict):
-                    if "results" in parsed and isinstance(parsed["results"], list):
-                        return parsed["results"], model_name, key_id
-                    return [parsed], model_name, key_id
+                results = call_genai_model(client, model_name, prompt)
+                results_by_ayah = {item.get("ayah"): item.get("spaced_thai", "") for item in results if item.get("ayah")}
+                llm_output = results_by_ayah.get(verse["ayah"], orig_text)
+
+                is_valid, final_text, status = validate_and_apply_spacing(orig_text, llm_output)
+                if is_valid:
+                    return True, final_text, status, model_name, key_id
+                else:
+                    # Character mismatch in Tier 1 -> break to fallback
+                    break
             except Exception as e:
                 err_str = str(e)
                 if "503" in err_str or "UNAVAILABLE" in err_str:
-                    print(f"  [{model_name} Key #{key_id}] 503 Busy. Switching model...", flush=True)
                     break
                 elif "404" in err_str or "NOT_FOUND" in err_str:
                     pool.mark_exhausted(model_name, key_id)
@@ -291,24 +321,52 @@ def call_genai_with_fallbacks(pool: MultiKeyClientPool, prompt: str) -> Tuple[Li
                         pool.mark_exhausted(model_name, key_id)
                         continue
                     else:
-                        print(f"  [{model_name} Key #{key_id}] Rate limit hit. Pausing 10s...", flush=True)
-                        time.sleep(10)
+                        time.sleep(5)
                 else:
-                    print(f"  [{model_name} Key #{key_id}] Attempt {attempt+1} Error: {e}", flush=True)
                     time.sleep(1)
 
-    raise RuntimeError(f"Failed to get valid spacing response after trying all models and keys.")
+    # --- TIER 2: Standard Non-Lite Models Fallback (20 RPD / 4 RPM) ---
+    for model_name in TIER2_MODELS:
+        for attempt in range(len(pool.keys)):
+            client, key_id, limiter = pool.get_client(tier=2, model_name=model_name)
+            if (model_name, key_id) in pool.exhausted_combos:
+                continue
+            limiter.wait()
+            try:
+                results = call_genai_model(client, model_name, prompt)
+                results_by_ayah = {item.get("ayah"): item.get("spaced_thai", "") for item in results if item.get("ayah")}
+                llm_output = results_by_ayah.get(verse["ayah"], orig_text)
+
+                is_valid, final_text, status = validate_and_apply_spacing(orig_text, llm_output)
+                if is_valid:
+                    return True, final_text, status, model_name, key_id
+                else:
+                    break
+            except Exception as e:
+                err_str = str(e)
+                if "503" in err_str or "UNAVAILABLE" in err_str:
+                    break
+                elif "404" in err_str or "NOT_FOUND" in err_str:
+                    pool.mark_exhausted(model_name, key_id)
+                    continue
+                elif "429" in err_str or "RESOURCE_EXHAUSTED" in err_str:
+                    if "quota" in err_str.lower() or "limit" in err_str.lower():
+                        pool.mark_exhausted(model_name, key_id)
+                        continue
+                    else:
+                        time.sleep(10)
+                else:
+                    time.sleep(1)
+
+    # If all tiers and models fail character-lock, safely preserve original text
+    return False, orig_text, "REJECTED_CHARACTER_MISMATCH", "none", 0
 
 
 # ---------------------------------------------------------------------------
 # Dynamic Character-Budget Batcher
 # ---------------------------------------------------------------------------
 def create_dynamic_batches(ayahs: List[Dict[str, Any]], char_budget: int = DEFAULT_CHAR_BUDGET) -> List[List[Dict[str, Any]]]:
-    """Create batches that contain exactly **one** ayah each.
-    This overrides the previous dynamic‑budget logic and forces a
-    conservative payload of a single verse per API request.
-    """
-    # Return a list where each inner list holds a single ayah dictionary
+    """Single-verse micro-batching for maximum precision and isolation."""
     return [[a] for a in ayahs]
 
 
@@ -377,7 +435,7 @@ def export_spacing_datasets(checkpoint: Dict[str, Any], master_data: List[Dict[s
 # ---------------------------------------------------------------------------
 def run_spacing_pipeline(surah_range: Optional[List[int]] = None, char_budget: int = DEFAULT_CHAR_BUDGET, refine_targets: Optional[str] = None):
     print("\n" + "="*70)
-    print("PIPELINE 2: LLM THAI SPACING & CLAUSE PACING ENGINE")
+    print("PIPELINE 2: LLM THAI SPACING & CLAUSE PACING ENGINE (2-Tier Architecture)")
     if refine_targets:
         print(f"Refinement Mode Active: targets = '{refine_targets}'")
     print("="*70)
@@ -412,35 +470,32 @@ def run_spacing_pipeline(surah_range: Optional[List[int]] = None, char_budget: i
     surah_needed_map = {}
 
     for s_num, ayahs in surahs.items():
-        if refine_targets in ("both", "targets", "yes", "true"):
-            # Target both SPACING_OPTIMIZED and REJECTED ayahs that have not been re-evaluated with v2_nfc
+        if refine_targets in ("rejected", "mismatches"):
             needed = [
                 a for a in ayahs
-                if checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("prompt_version") != "v2_nfc"
+                if "REJECTED" in checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("status", "")
+            ]
+        elif refine_targets in ("both", "targets", "yes", "true"):
+            needed = [
+                a for a in ayahs
+                if checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("prompt_version") != PROMPT_VERSION
                 and (
                     checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("status") == "SPACING_OPTIMIZED"
                     or "REJECTED" in checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("status", "")
                 )
             ]
-        elif refine_targets in ("rejected", "mismatches"):
-            needed = [
-                a for a in ayahs
-                if checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("prompt_version") != "v2_nfc"
-                and "REJECTED" in checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("status", "")
-            ]
         elif refine_targets == "optimized":
             needed = [
                 a for a in ayahs
-                if checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("prompt_version") != "v2_nfc"
+                if checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("prompt_version") != PROMPT_VERSION
                 and checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("status") == "SPACING_OPTIMIZED"
             ]
         elif refine_targets == "all":
-            # Both refined targets and unprocessed ayahs
             needed = [
                 a for a in ayahs
                 if (not checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("is_processed"))
                 or (
-                    checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("prompt_version") != "v2_nfc"
+                    checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("prompt_version") != PROMPT_VERSION
                     and (
                         checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("status") == "SPACING_OPTIMIZED"
                         or "REJECTED" in checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("status", "")
@@ -451,7 +506,7 @@ def run_spacing_pipeline(surah_range: Optional[List[int]] = None, char_budget: i
             needed = [a for a in ayahs if f"{s_num}:{a['ayah']}" in targets_set]
         else:
             needed = [a for a in ayahs if not checkpoint.get(f"{s_num}:{a['ayah']}", {}).get("is_processed")]
-        
+
         surah_needed_map[s_num] = needed
         total_needed_count += len(needed)
 
@@ -470,40 +525,27 @@ def run_spacing_pipeline(surah_range: Optional[List[int]] = None, char_budget: i
         print(f"\n--> Processing Surah {s_num:3d} ({len(needed_ayahs)} target ayahs in {len(batches)} micro-batches)...", flush=True)
 
         for b_idx, batch in enumerate(batches, 1):
-            ayah_range_str = f"{batch[0]['ayah']}-{batch[-1]['ayah']}" if len(batch) > 1 else f"{batch[0]['ayah']}"
-            prompt = create_spacing_prompt(s_num, batch)
+            verse = batch[0]
+            a_num = verse["ayah"]
+            key = f"{s_num}:{a_num}"
 
-            try:
-                results, used_model, key_id = call_genai_with_fallbacks(pool, prompt)
-            except Exception as e:
-                print(f"    CRITICAL FAILURE on Surah {s_num} Ayahs {ayah_range_str}: {e}", flush=True)
-                continue
+            is_valid, final_text, status, used_model, key_id = process_single_verse_2tier(pool, s_num, verse)
 
-            results_by_ayah = {item.get("ayah"): item.get("spaced_thai", "") for item in results if item.get("ayah")}
-
-            for v in batch:
-                a_num = v["ayah"]
-                key = f"{s_num}:{a_num}"
-                orig_text = v["thai"]
-                llm_output = results_by_ayah.get(a_num, orig_text)
-
-                is_valid, final_text, status = validate_and_apply_spacing(orig_text, llm_output)
-
-                checkpoint[key] = {
-                    "is_processed": True,
-                    "prompt_version": "v2_nfc",
-                    "model": used_model,
-                    "final_thai": final_text,
-                    "status": status,
-                    "char_lock_verified": is_valid,
-                    "timestamp": time.time()
-                }
-                processed_in_session += 1
-
+            checkpoint[key] = {
+                "is_processed": True,
+                "prompt_version": PROMPT_VERSION,
+                "model": used_model,
+                "final_thai": final_text,
+                "status": status,
+                "char_lock_verified": is_valid,
+                "timestamp": time.time()
+            }
+            processed_in_session += 1
             save_checkpoint(checkpoint)
+
             total_now = sum(1 for k, v in checkpoint.items() if v.get("is_processed"))
             remaining_rej = sum(1 for k, v in checkpoint.items() if "REJECTED" in v.get("status", ""))
-            print(f"    [{used_model} Key #{key_id}] Surah {s_num} Ayahs {ayah_range_str} -> {status} (Progress: {processed_in_session}/{total_needed_count} in run | Rej Total: {remaining_rej})", flush=True)
+            print(f"    [{used_model} Key #{key_id}] Surah {s_num}:{a_num} -> {status} (Progress: {processed_in_session}/{total_needed_count} in run | Rej Total: {remaining_rej})", flush=True)
 
         export_spacing_datasets(checkpoint, master_data)
 
